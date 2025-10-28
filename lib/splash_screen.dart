@@ -19,18 +19,23 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.indigo[50],
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset('assets/images/logo.png', width: 150),
-            SizedBox(height: 30),
-            CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.indigo),
-            ),
-            SizedBox(height: 20),
-            Text('Cargando ...', style: TextStyle(fontSize: 16)),
-          ],
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Semantics(
+                label: 'Logo de AlfFilm',
+                child: Image.asset('assets/images/logo.png', width: 150),
+              ),
+              SizedBox(height: 30),
+              CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.indigo),
+              ),
+              SizedBox(height: 20),
+              Text('Cargando ...', style: TextStyle(fontSize: 16)),
+            ],
+          ),
         ),
       ),
     );
