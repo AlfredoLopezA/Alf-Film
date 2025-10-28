@@ -1,16 +1,20 @@
-import 'package:alf_film/LocationConfirmationScreen.dart';
+import 'package:alf_film/location_confirmation_screen.dart';
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:geolocator/geolocator.dart';
 import 'location_service.dart';
 import 'splash_screen.dart';
-import 'BackgroundWrapper.dart';
+import 'background_wrapper.dart';
+import 'manual_location_screen.dart';
+import 'movies_screen.dart';
 
 void main() {
   runApp(AlfFilmApp());
 }
 
 class AlfFilmApp extends StatelessWidget {
+  const AlfFilmApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,14 +25,18 @@ class AlfFilmApp extends StatelessWidget {
         '/': (context) => SplashScreen(),
         '/home': (context) => HomeScreen(),
         '/confirm': (context) => LocationConfirmationScreen(),
+        '/manual': (context) => ManualLocationScreen(), // pantalla manual
+        '/movies': (context) => MoviesScreen(), // pantalla cartelera
       },
     );
   }
 }
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {

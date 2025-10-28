@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
-import 'BackgroundWrapper.dart';
+import 'background_wrapper.dart';
 
 class LocationConfirmationScreen extends StatelessWidget {
+  const LocationConfirmationScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final Position? position =
@@ -55,7 +57,10 @@ class LocationConfirmationScreen extends StatelessWidget {
                           onPressed: () {
                             Navigator.pushNamed(context, '/manual');
                           },
-                          child: Text('No, seleccionar manualmente'),
+                          child: Text(
+                            'No, seleccionar manualmente',
+                            style: TextStyle(color: Colors.white, fontSize: 14),
+                          ),
                         ),
                       ],
                     );
