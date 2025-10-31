@@ -10,9 +10,12 @@ class MoviesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Obtener argumentos si se pasaron desde la navegación
-    final args = ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
+    final args =
+        ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
 
-    final String displayCity = args != null && args['city'] != null ? args['city'] : city ?? 'tu ciudad';
+    final String displayCity = args != null && args['city'] != null
+        ? args['city']
+        : city ?? 'tu ciudad';
     final String? displayCountry = args != null ? args['country'] : country;
 
     return Scaffold(
@@ -28,7 +31,11 @@ class MoviesScreen extends StatelessWidget {
             children: [
               Text(
                 'Películas en cartelera en $displayCity',
-                style: TextStyle(fontSize: 22, color: Colors.white, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               if (displayCountry != null)
                 Text(

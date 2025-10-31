@@ -53,7 +53,8 @@ class _HomeScreenState extends State<HomeScreen> {
     Position? pos = await _locationService.getCurrentLocation();
     if (pos != null) {
       setState(() {
-        _locationMessage = 'Lat: ${pos.latitude}, Lon: ${pos.longitude}';
+        _locationMessage =
+            'Ubicación detectada'; // 'Lat: ${pos.latitude}, Lon: ${pos.longitude}';
       });
 
       // Aquí podrías usar reverse geocoding para obtener ciudad/comuna
@@ -63,6 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
         _locationMessage = 'No se pudo obtener la ubicación.';
       });
       // Aquí podrías redirigir a selección manual de país/ciudad
+      Navigator.pushNamed(context, '/manual', arguments: pos);
     }
   }
 
