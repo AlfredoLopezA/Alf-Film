@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:geolocator/geolocator.dart';
 import 'package:flutter/foundation.dart';
 

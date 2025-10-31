@@ -1,0 +1,1470 @@
+[  +52 ms] executing: uname -m
+[   +7 ms] Exit code 0 from: uname -m
+[        ] x86_64
+[  +16 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +46 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +73 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb devices -l
+[  +41 ms] List of devices attached
+           adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp device product:camellian_global model:M2103K19G device:camellian transport_id:448
+[  +42 ms] /home/alfredo/Android/Sdk/platform-tools/adb -s adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp shell getprop
+[ +439 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[ +137 ms] Skipping pub get: version match.
+[  +44 ms] Found plugin geolocator at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator-10.1.1/
+[   +8 ms] Found plugin geolocator_windows at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[  +32 ms] Found plugin geolocator_web at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_web-2.2.1/
+[   +9 ms] Found plugin geolocator_apple at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+[   +6 ms] Found plugin geolocator_android at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+[  +20 ms] Found plugin geocoding at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding-2.2.2/
+[   +8 ms] Found plugin geocoding_ios at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding_ios-2.3.0/
+[   +7 ms] Found plugin geocoding_android at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding_android-3.3.1/
+[ +169 ms] Found plugin geolocator at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator-10.1.1/
+[   +5 ms] Found plugin geolocator_windows at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[  +23 ms] Found plugin geolocator_web at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_web-2.2.1/
+[   +9 ms] Found plugin geolocator_apple at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+[   +3 ms] Found plugin geolocator_android at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+[  +12 ms] Found plugin geocoding at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding-2.2.2/
+[   +5 ms] Found plugin geocoding_ios at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding_ios-2.3.0/
+[   +2 ms] Found plugin geocoding_android at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding_android-3.3.1/
+[  +68 ms] Skipping generating web_plugin_registrant.dart because it is up-to-date.
+[  +12 ms] Found plugin geolocator at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator-10.1.1/
+[   +2 ms] Found plugin geolocator_windows at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[  +16 ms] Found plugin geolocator_web at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_web-2.2.1/
+[   +4 ms] Found plugin geolocator_apple at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+[   +7 ms] Found plugin geolocator_android at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+[   +9 ms] Found plugin geocoding at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding-2.2.2/
+[   +5 ms] Found plugin geocoding_ios at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding_ios-2.3.0/
+[   +4 ms] Found plugin geocoding_android at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding_android-3.3.1/
+[  +32 ms] Generating /home/alfredo/Movile App/alf_film/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+[   +2 ms] Skipping generating GeneratedPluginRegistrant.java because it is up-to-date.
+[   +7 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +2 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +3 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +5 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +2 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +3 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +4 ms] Skipping generating GeneratedPluginRegistrant.h because it is up-to-date.
+[   +2 ms] Skipping generating GeneratedPluginRegistrant.m because it is up-to-date.
+[   +2 ms] Skipping generating GeneratedPluginRegistrant.swift because it is up-to-date.
+[  +16 ms] ro.hardware = mt6833
+[        ] ro.build.characteristics = default
+[  +68 ms] Initializing file store
+[  +17 ms] Skipping target: gen_localizations
+[   +4 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have updated contents: /home/alfredo/Movile App/alf_film/.dart_tool/package_config.json,/home/alfredo/Movile App/alf_film/.dart_tool/flutter_build/dart_plugin_registrant.dart}
+[  +17 ms] Found plugin geolocator at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator-10.1.1/
+[   +3 ms] Found plugin geolocator_windows at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[  +17 ms] Found plugin geolocator_web at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_web-2.2.1/
+[   +8 ms] Found plugin geolocator_apple at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+[   +3 ms] Found plugin geolocator_android at /home/alfredo/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+[   +8 ms] Found plugin geocoding at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding-2.2.2/
+[   +4 ms] Found plugin geocoding_ios at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding_ios-2.3.0/
+[   +3 ms] Found plugin geocoding_android at /home/alfredo/.pub-cache/hosted/pub.dev/geocoding_android-3.3.1/
+[  +32 ms] Skipping generating dart_plugin_registrant.dart because it is up-to-date.
+[        ] gen_dart_plugin_registrant: Complete
+[   +2 ms] Skipping target: _composite
+[   +3 ms] complete
+[   +7 ms] Launching lib/main.dart on M2103K19G (wireless) in debug mode...
+[   +7 ms] /opt/flutter/bin/cache/dart-sdk/bin/dartaotruntime /opt/flutter/bin/cache/dart-sdk/bin/snapshots/frontend_server_aot.dart.snapshot --sdk-root /opt/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk/ --incremental --target=flutter --experimental-emit-debug-metadata -DFLUTTER_VERSION=3.35.7 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=adc9010625 -DFLUTTER_ENGINE_REVISION=035316565a -DFLUTTER_DART_VERSION=3.9.2 --output-dill /tmp/flutter_tools.VZKHKQ/flutter_tool.GFBLVP/app.dill --packages /home/alfredo/Movile App/alf_film/.dart_tool/package_config.json -Ddart.vm.profile=false -Ddart.vm.product=false --enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill build/892b637c16d52470fb7b14b9d9897587.cache.dill.track.dill --source file:///home/alfredo/Movile%20App/alf_film/.dart_tool/flutter_build/dart_plugin_registrant.dart --source package:flutter/src/dart_plugin_registrant.dart -Dflutter.dart_plugin_registrant=file:///home/alfredo/Movile%20App/alf_film/.dart_tool/flutter_build/dart_plugin_registrant.dart --verbosity=error --enable-experiment=alternative-invalidation-strategy
+[  +12 ms] executing: /home/alfredo/Android/Sdk/build-tools/35.0.1/aapt dump xmltree /home/alfredo/Movile App/alf_film/build/app/outputs/flutter-apk/app-debug.apk AndroidManifest.xml
+[  +14 ms] Exit code 0 from: /home/alfredo/Android/Sdk/build-tools/35.0.1/aapt dump xmltree /home/alfredo/Movile App/alf_film/build/app/outputs/flutter-apk/app-debug.apk AndroidManifest.xml
+[        ] N: android=http://schemas.android.com/apk/res/android
+             E: manifest (line=2)
+               A: android:versionCode(0x0101021b)=(type 0x10)0x1
+               A: android:versionName(0x0101021c)="1.0.0" (Raw: "1.0.0")
+               A: android:compileSdkVersion(0x01010572)=(type 0x10)0x24
+               A: android:compileSdkVersionCodename(0x01010573)="16" (Raw: "16")
+               A: package="com.example.alf_film" (Raw: "com.example.alf_film")
+               A: platformBuildVersionCode=(type 0x10)0x24
+               A: platformBuildVersionName=(type 0x10)0x10
+               E: uses-sdk (line=7)
+                 A: android:minSdkVersion(0x0101020c)=(type 0x10)0x18
+                 A: android:targetSdkVersion(0x01010270)=(type 0x10)0x24
+               E: uses-permission (line=15)
+                 A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+               E: uses-permission (line=17)
+                 A: android:name(0x01010003)="android.permission.ACCESS_FINE_LOCATION" (Raw: "android.permission.ACCESS_FINE_LOCATION")
+               E: uses-permission (line=18)
+                 A: android:name(0x01010003)="android.permission.ACCESS_COARSE_LOCATION" (Raw: "android.permission.ACCESS_COARSE_LOCATION")
+               E: queries (line=26)
+                 E: intent (line=27)
+                   E: action (line=28)
+                     A: android:name(0x01010003)="android.intent.action.PROCESS_TEXT" (Raw: "android.intent.action.PROCESS_TEXT")
+                   E: data (line=30)
+                     A: android:mimeType(0x01010026)="text/plain" (Raw: "text/plain")
+               E: permission (line=34)
+                 A: android:name(0x01010003)="com.example.alf_film.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "com.example.alf_film.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+                 A: android:protectionLevel(0x01010009)=(type 0x11)0x2
+               E: uses-permission (line=38)
+                 A: android:name(0x01010003)="com.example.alf_film.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "com.example.alf_film.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+               E: application (line=40)
+                 A: android:label(0x01010001)="alf_film" (Raw: "alf_film")
+                 A: android:icon(0x01010002)=@0x7f0a0000
+                 A: android:name(0x01010003)="android.app.Application" (Raw: "android.app.Application")
+                 A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+                 A: android:extractNativeLibs(0x010104ea)=(type 0x12)0x0
+                 A: android:appComponentFactory(0x0101057a)="androidx.core.app.CoreComponentFactory" (Raw: "androidx.core.app.CoreComponentFactory")
+                 E: activity (line=47)
+                   A: android:theme(0x01010000)=@0x7f0c0000
+                   A: android:name(0x01010003)="com.example.alf_film.MainActivity" (Raw: "com.example.alf_film.MainActivity")
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:taskAffinity(0x01010012)="" (Raw: "")
+                   A: android:launchMode(0x0101001d)=(type 0x10)0x1
+                   A: android:configChanges(0x0101001f)=(type 0x11)0x40003fb4
+                   A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x10
+                   A: android:hardwareAccelerated(0x010102d3)=(type 0x12)0xffffffff
+                   E: meta-data (line=63)
+                     A: android:name(0x01010003)="io.flutter.embedding.android.NormalTheme" (Raw: "io.flutter.embedding.android.NormalTheme")
+                     A: android:resource(0x01010025)=@0x7f0c0001
+                   E: intent-filter (line=67)
+                     E: action (line=68)
+                       A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+                     E: category (line=70)
+                       A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+                 E: meta-data (line=77)
+                   A: android:name(0x01010003)="flutterEmbedding" (Raw: "flutterEmbedding")
+                   A: android:value(0x01010024)=(type 0x10)0x2
+                 E: service (line=81)
+                   A: android:name(0x01010003)="com.baseflow.geolocator.GeolocatorLocationService" (Raw: "com.baseflow.geolocator.GeolocatorLocationService")
+                   A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   A: android:foregroundServiceType(0x01010599)=(type 0x11)0x8
+                 E: uses-library (line=87)
+                   A: android:name(0x01010003)="androidx.window.extensions" (Raw: "androidx.window.extensions")
+                   A: android:required(0x0101028e)=(type 0x12)0x0
+                 E: uses-library (line=90)
+                   A: android:name(0x01010003)="androidx.window.sidecar" (Raw: "androidx.window.sidecar")
+                   A: android:required(0x0101028e)=(type 0x12)0x0
+                 E: activity (line=94)
+                   A: android:theme(0x01010000)=@0x01030010
+                   A: android:name(0x01010003)="com.google.android.gms.common.api.GoogleApiActivity" (Raw: "com.google.android.gms.common.api.GoogleApiActivity")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                 E: meta-data (line=99)
+                   A: android:name(0x01010003)="com.google.android.gms.version" (Raw: "com.google.android.gms.version")
+                   A: android:value(0x01010024)=@0x7f080000
+                 E: provider (line=103)
+                   A: android:name(0x01010003)="androidx.startup.InitializationProvider" (Raw: "androidx.startup.InitializationProvider")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   A: android:authorities(0x01010018)="com.example.alf_film.androidx-startup" (Raw: "com.example.alf_film.androidx-startup")
+                   E: meta-data (line=107)
+                     A: android:name(0x01010003)="androidx.lifecycle.ProcessLifecycleInitializer" (Raw: "androidx.lifecycle.ProcessLifecycleInitializer")
+                     A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+                   E: meta-data (line=110)
+                     A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallerInitializer" (Raw: "androidx.profileinstaller.ProfileInstallerInitializer")
+                     A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+                 E: receiver (line=115)
+                   A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallReceiver" (Raw: "androidx.profileinstaller.ProfileInstallReceiver")
+                   A: android:permission(0x01010006)="android.permission.DUMP" (Raw: "android.permission.DUMP")
+                   A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:directBootAware(0x01010505)=(type 0x12)0x0
+                   E: intent-filter (line=121)
+                     E: action (line=122)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.INSTALL_PROFILE" (Raw: "androidx.profileinstaller.action.INSTALL_PROFILE")
+                   E: intent-filter (line=124)
+                     E: action (line=125)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.SKIP_FILE" (Raw: "androidx.profileinstaller.action.SKIP_FILE")
+                   E: intent-filter (line=127)
+                     E: action (line=128)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.SAVE_PROFILE" (Raw: "androidx.profileinstaller.action.SAVE_PROFILE")
+                   E: intent-filter (line=130)
+                     E: action (line=131)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.BENCHMARK_OPERATION" (Raw: "androidx.profileinstaller.action.BENCHMARK_OPERATION")
+[  +12 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb -s adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp shell -x logcat -v time -t 1
+[  +13 ms] <- compile package:alf_film/main.dart
+[ +679 ms] --------- beginning of main
+           10-31 16:21:23.019 D/MPE_SE  ( 1059): mpe_sensor_check_mnl_response: mpe_sensor_check_mnl_response 0.154044, 1761938501.018939 1761938500.864895 0 1
+[  +19 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb version
+[   +8 ms] Android Debug Bridge version 1.0.41
+           Version 35.0.2-12147458
+           Installed as /home/alfredo/Android/Sdk/platform-tools/adb
+           Running on Linux 5.15.0-138-generic (x86_64)
+[   +4 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb start-server
+[  +11 ms] Building APK
+[  +14 ms] executing: /opt/android-studio/jbr/bin/java -version
+[ +164 ms] Exit code 0 from: /opt/android-studio/jbr/bin/java -version
+[        ] openjdk version "21.0.6" 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13355223-b631.42)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13355223-b631.42, mixed mode)
+[   +5 ms] executing: /opt/android-studio/jbr/bin/java -version
+[ +165 ms] Exit code 0 from: /opt/android-studio/jbr/bin/java -version
+[        ] openjdk version "21.0.6" 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13355223-b631.42)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13355223-b631.42, mixed mode)
+[  +16 ms] Top-level Gradle build file not found, skipping migration of task "clean".
+[   +3 ms] executing: /opt/android-studio/jbr/bin/java --version
+[ +193 ms] Exit code 0 from: /opt/android-studio/jbr/bin/java --version
+[        ] openjdk 21.0.6 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13355223-b631.42)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13355223-b631.42, mixed mode)
+[   +3 ms] Version of Java is different than impacted version, no migration attempted.
+[  +30 ms] CMake project not found, skipping support Android 15 16k page size migration.
+[   +5 ms] Using gradle from /home/alfredo/Movile App/alf_film/android/gradlew.
+[  +26 ms] LocalFile: '/home/alfredo/Movile App/alf_film/android/build.gradle.kts' provides AGP version from classpath: 8.5.2
+[   +1 ms] Running Gradle task 'assembleDebug'...
+[   +1 ms] executing: [/home/alfredo/Movile App/alf_film/android/] /home/alfredo/Movile App/alf_film/android/gradlew --full-stacktrace --info -Pverbose=true -Ptarget-platform=android-arm64 -Ptarget=/home/alfredo/Movile App/alf_film/lib/main.dart -Pbase-application-name=android.app.Application -Pdart-defines=RkxVVFRFUl9WRVJTSU9OPTMuMzUuNw==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YWRjOTAxMDYyNQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049MDM1MzE2NTY1YQ==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My45LjI= -Pdart-obfuscation=false -Ptrack-widget-creation=true -Ptree-shake-icons=false -Pfilesystem-scheme=org-dartlang-root assembleDebug
+[ +949 ms] Initialized native services in: /home/alfredo/.gradle/native
+[   +4 ms] Initialized jansi services in: /home/alfredo/.gradle/native
+[ +427 ms] The client will now receive all logging from the daemon (pid: 1232). The daemon log file: /home/alfredo/.gradle/daemon/8.12/daemon-1232.out.log
+[        ] Starting 6th build in daemon [uptime: 1 hrs 53 mins 16.63 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 8 GiB, non-heap usage: 4% of 4 GiB]
+[   +7 ms] Using 4 worker leases.
+[        ] Not watching /home/alfredo/Movile App/alf_film/android since the file system is not supported
+[        ] Watching the file system is configured to be enabled if available
+[        ] File system watching is active
+[        ] Starting Build
+[  +89 ms] Not watching /opt/flutter/packages/flutter_tools/gradle since the file system is not supported
+[ +206 ms] > Configure project :gradle
+[        ] Evaluating project ':gradle' using build file '/opt/flutter/packages/flutter_tools/gradle/build.gradle.kts'.
+[        ] Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+[        ] Resolved plugin [id: 'org.gradle.groovy']
+[        ] Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '5.1.2']
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '1.9.20']
+[        ] Using Kotlin Gradle Plugin gradle85 variant
+[        ] kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+[        ] kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+[        ] file or directory '/opt/flutter/packages/flutter_tools/gradle/src/main/java', not found
+[        ] Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+[        ] Resolved plugin [id: 'com.android.application', version: '8.9.1', apply: false]
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.1.0', apply: false]
+[        ] Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#517,Execution worker,5,main]) started.
+[        ] :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[   +3 ms] Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[   +2 ms] Resolve mutations for :gradle:compileKotlin (Thread[#516,included builds,5,main]) started.
+[   +1 ms] :gradle:compileKotlin (Thread[#516,included builds,5,main]) started.
+[  +86 ms] > Task :gradle:compileKotlin UP-TO-DATE
+[        ] Caching disabled for task ':gradle:compileKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':gradle:compileKotlin' as it is up-to-date.
+[        ] Resolve mutations for :gradle:compileJava (Thread[#517,Execution worker,5,main]) started.
+[        ] :gradle:compileJava (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :gradle:compileJava NO-SOURCE
+[        ] Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:compileGroovy (Thread[#517,Execution worker,5,main]) started.
+[   +3 ms] :gradle:compileGroovy (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :gradle:compileGroovy NO-SOURCE
+[        ] Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:pluginDescriptors (Thread[#517,Execution worker,5,main]) started.
+[        ] :gradle:pluginDescriptors (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :gradle:pluginDescriptors UP-TO-DATE
+[        ] Caching disabled for task ':gradle:pluginDescriptors' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+[        ] Resolve mutations for :gradle:processResources (Thread[#517,Execution worker,5,main]) started.
+[        ] :gradle:processResources (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :gradle:processResources UP-TO-DATE
+[        ] Caching disabled for task ':gradle:processResources' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[   +8 ms] Skipping task ':gradle:processResources' as it is up-to-date.
+[   +1 ms] Resolve mutations for :gradle:classes (Thread[#517,Execution worker,5,main]) started.
+[   +1 ms] :gradle:classes (Thread[#517,Execution worker,5,main]) started.
+[   +3 ms] > Task :gradle:classes UP-TO-DATE
+[        ] Skipping task ':gradle:classes' as it has no actions.
+[   +2 ms] Resolve mutations for :gradle:jar (Thread[#517,Execution worker,5,main]) started.
+[        ] :gradle:jar (Thread[#517,Execution worker,5,main]) started.
+[   +6 ms] > Task :gradle:jar UP-TO-DATE
+[        ] Caching disabled for task ':gradle:jar' because:
+[   +1 ms]   Build cache is disabled
+[   +2 ms]   Not worth caching
+[        ] Skipping task ':gradle:jar' as it is up-to-date.
+[ +152 ms] Settings evaluated using settings file '/home/alfredo/Movile App/alf_film/android/settings.gradle.kts'.
+[        ] Projects loaded. Root project using build file '/home/alfredo/Movile App/alf_film/android/build.gradle.kts'.
+[        ] Included projects: [root project 'android', project ':app', project ':geocoding_android', project ':geolocator_android']
+[ +407 ms] > Configure project :app
+[        ] Evaluating project ':app' using build file '/home/alfredo/Movile App/alf_film/android/app/build.gradle.kts'.
+[        ] Resolved plugin [id: 'com.android.application']
+[        ] Resolved plugin [id: 'kotlin-android']
+[        ] Resolved plugin [id: 'dev.flutter.flutter-gradle-plugin']
+[        ] Using default execution profile
+[        ] Using Kotlin Gradle Plugin gradle85 variant
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[  +10 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[   +7 ms] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +1 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +1 ms] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[   +2 ms] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[   +1 ms] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +3 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[   +1 ms] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[   +1 ms] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +1 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[   +1 ms] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +7 ms] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +2 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +8 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[   +4 ms] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +3 ms] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [27.0.12077973]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/alfredo/Android/Sdk
+[        ] > Configure project :
+[        ] Evaluating root project 'android' using build file '/home/alfredo/Movile App/alf_film/android/build.gradle.kts'.
+[  +95 ms] > Configure project :geocoding_android
+[        ] Evaluating project ':geocoding_android' using build file '/home/alfredo/.pub-cache/hosted/pub.dev/geocoding_android-3.3.1/android/build.gradle'.
+[        ] Using default execution profile
+[  +98 ms] > Configure project :geolocator_android
+[        ] Evaluating project ':geolocator_android' using build file '/home/alfredo/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/android/build.gradle'.
+[        ] Using default execution profile
+[        ] All projects evaluated.
+[        ] Task name matched 'assembleDebug'
+[        ] Selected primary task 'assembleDebug' from project :
+[  +98 ms] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+[ +209 ms] Tasks to be executed: [task ':app:DebugMinSdkCheck', task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:compileFlutterBuildDebug', task ':app:packJniLibsflutterBuildDebug', task ':geocoding_android:preBuild', task ':geocoding_android:preDebugBuild', task ':geocoding_android:writeDebugAarMetadata', task ':geolocator_android:preBuild', task ':geolocator_android:preDebugBuild', task ':geolocator_android:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:cleanMergeDebugAssets', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':geocoding_android:mergeDebugShaders', task ':geocoding_android:compileDebugShaders', task ':geocoding_android:generateDebugAssets', task ':geocoding_android:mergeDebugAssets', task ':geolocator_android:mergeDebugShaders', task ':geolocator_android:compileDebugShaders', task ':geolocator_android:generateDebugAssets', task ':geolocator_android:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:copyFlutterAssetsDebug', task ':app:generateDebugResValues', task ':geocoding_android:generateDebugResValues', task ':geocoding_android:generateDebugResources', task ':geocoding_android:packageDebugResources', task ':geolocator_android:generateDebugResValues', task ':geolocator_android:generateDebugResources', task ':geolocator_android:packageDebugResources', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':geocoding_android:extractDeepLinksDebug', task ':geocoding_android:processDebugManifest', task ':geolocator_android:extractDeepLinksDebug', task ':geolocator_android:processDebugManifest', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':geocoding_android:compileDebugLibraryResources', task ':geocoding_android:parseDebugLocalResources', task ':geocoding_android:generateDebugRFile', task ':geolocator_android:compileDebugLibraryResources', task ':geolocator_android:parseDebugLocalResources', task ':geolocator_android:generateDebugRFile', task ':app:processDebugResources', task ':geocoding_android:javaPreCompileDebug', task ':geocoding_android:compileDebugJavaWithJavac', task ':geocoding_android:bundleLibCompileToJarDebug', task ':geolocator_android:javaPreCompileDebug', task ':geolocator_android:compileDebugJavaWithJavac', task ':geolocator_android:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:compressDebugAssets', task ':geocoding_android:bundleLibRuntimeToJarDebug', task ':geolocator_android:bundleLibRuntimeToJarDebug', task ':app:desugarDebugFileDependencies', task ':app:dexBuilderDebug', task ':app:mergeDebugGlobalSynthetics', task ':app:processDebugJavaRes', task ':geocoding_android:processDebugJavaRes', task ':geolocator_android:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:mergeExtDexDebug', task ':geocoding_android:bundleLibRuntimeToDirDebug', task ':geolocator_android:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':app:mergeProjectDexDebug', task ':app:configureCMakeDebug[arm64-v8a]', task ':app:buildCMakeDebug[arm64-v8a]', task ':app:configureCMakeDebug[armeabi-v7a]', task ':app:buildCMakeDebug[armeabi-v7a]', task ':app:configureCMakeDebug[x86_64]', task ':app:buildCMakeDebug[x86_64]', task ':app:mergeDebugJniLibFolders', task ':geocoding_android:mergeDebugJniLibFolders', task ':geocoding_android:mergeDebugNativeLibs', task ':geocoding_android:copyDebugJniLibsProjectOnly', task ':geolocator_android:mergeDebugJniLibFolders', task ':geolocator_android:mergeDebugNativeLibs', task ':geolocator_android:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug', task ':geocoding_android:stripDebugDebugSymbols', task ':geocoding_android:copyDebugJniLibsProjectAndLocalJars', task ':geocoding_android:extractDebugAnnotations', task ':geocoding_android:extractDeepLinksForAarDebug', task ':geocoding_android:mergeDebugGeneratedProguardFiles', task ':geocoding_android:mergeDebugConsumerProguardFiles', task ':geocoding_android:prepareDebugArtProfile', task ':geocoding_android:prepareLintJarForPublish', task ':geocoding_android:mergeDebugJavaResource', task ':geocoding_android:syncDebugLibJars', task ':geocoding_android:bundleDebugAar', task ':geocoding_android:assembleDebug', task ':geolocator_android:stripDebugDebugSymbols', task ':geolocator_android:copyDebugJniLibsProjectAndLocalJars', task ':geolocator_android:extractDebugAnnotations', task ':geolocator_android:extractDeepLinksForAarDebug', task ':geolocator_android:mergeDebugGeneratedProguardFiles', task ':geolocator_android:mergeDebugConsumerProguardFiles', task ':geolocator_android:prepareDebugArtProfile', task ':geolocator_android:prepareLintJarForPublish', task ':geolocator_android:mergeDebugJavaResource', task ':geolocator_android:syncDebugLibJars', task ':geolocator_android:bundleDebugAar', task ':geolocator_android:assembleDebug']
+[        ] Tasks that were excluded: []
+[        ] work action Parameters of IdentityTransform (Thread[#516,included builds,5,main]) started.
+[        ] work action Parameters of DexingNoClasspathTransform (Thread[#516,included builds,5,main]) started.
+[        ] work action Parameters of DexingOutputSplitTransform (Thread[#516,included builds,5,main]) started.
+[        ] work action Parameters of ClassesDirToClassesTransform (Thread[#516,included builds,5,main]) started.
+[        ] work action Parameters of DexingOutputSplitTransform (Thread[#516,included builds,5,main]) started.
+[        ] Resolve mutations for :app:DebugMinSdkCheck (Thread[#516,included builds,5,main]) started.
+[        ] :app:DebugMinSdkCheck (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:DebugMinSdkCheck
+[        ] Caching disabled for task ':app:DebugMinSdkCheck' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:DebugMinSdkCheck' is not up-to-date because:
+[   +8 ms]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :app:preBuild (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:preBuild (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:preBuild UP-TO-DATE
+[        ] Skipping task ':app:preBuild' as it has no actions.
+[        ] Resolve mutations for :app:preDebugBuild (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:preDebugBuild (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':app:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[#517,Execution worker,5,main]) started.
+[   +5 ms] :app:mergeDebugNativeDebugMetadata (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+[        ] Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+[        ] Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:checkKotlinGradlePluginConfigurationErrors (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :app:compileFlutterBuildDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:compileFlutterBuildDebug (Thread[#517,Execution worker,5,main]) started.
+[  +72 ms] > Task :app:compileFlutterBuildDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:compileFlutterBuildDebug' because:
+[        ]   Build cache is disabled
+[        ]   Caching has not been enabled for the task
+[        ] Skipping task ':app:compileFlutterBuildDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:packJniLibsflutterBuildDebug (Thread[#516,included builds,5,main]) started.
+[        ] :app:packJniLibsflutterBuildDebug (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:packJniLibsflutterBuildDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:packJniLibsflutterBuildDebug' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':app:packJniLibsflutterBuildDebug' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:preBuild (Thread[#516,included builds,5,main]) started.
+[        ] :geocoding_android:preBuild (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:preBuild UP-TO-DATE
+[        ] Skipping task ':geocoding_android:preBuild' as it has no actions.
+[        ] Resolve mutations for :geocoding_android:preDebugBuild (Thread[#516,included builds,5,main]) started.
+[        ] :geocoding_android:preDebugBuild (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':geocoding_android:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :geocoding_android:writeDebugAarMetadata (Thread[#516,included builds,5,main]) started.
+[   +1 ms] :geocoding_android:writeDebugAarMetadata (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:writeDebugAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:writeDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':geocoding_android:writeDebugAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :geocoding_android) (Thread[#516,included builds,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:preBuild (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:preBuild (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:preBuild UP-TO-DATE
+[        ] Skipping task ':geolocator_android:preBuild' as it has no actions.
+[        ] Resolve mutations for :geolocator_android:preDebugBuild (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:preDebugBuild (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':geolocator_android:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :geolocator_android:writeDebugAarMetadata (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:writeDebugAarMetadata (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:writeDebugAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:writeDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':geolocator_android:writeDebugAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :geolocator_android) (Thread[#516,included builds,5,main]) started.
+[  +10 ms] Resolve mutations for :app:checkDebugAarMetadata (Thread[#516,included builds,5,main]) started.
+[        ] :app:checkDebugAarMetadata (Thread[#517,Execution worker,5,main]) started.
+[  +75 ms] > Task :app:checkDebugAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':app:checkDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+[        ] Resolve mutations for :app:cleanMergeDebugAssets (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:cleanMergeDebugAssets (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:cleanMergeDebugAssets
+[        ] Caching disabled for task ':app:cleanMergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:cleanMergeDebugAssets' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :app:mergeDebugShaders (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:mergeDebugShaders (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:mergeDebugShaders UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[   +2 ms] Skipping task ':app:mergeDebugShaders' as it is up-to-date.
+[        ] Resolve mutations for :app:compileDebugShaders (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:compileDebugShaders (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:compileDebugShaders NO-SOURCE
+[        ] Skipping task ':app:compileDebugShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :app:generateDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:generateDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':app:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :geocoding_android:mergeDebugShaders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:mergeDebugShaders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:mergeDebugShaders UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:mergeDebugShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[   +1 ms] Skipping task ':geocoding_android:mergeDebugShaders' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:compileDebugShaders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:compileDebugShaders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:compileDebugShaders NO-SOURCE
+[        ] Skipping task ':geocoding_android:compileDebugShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :geocoding_android:generateDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:generateDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':geocoding_android:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :geocoding_android:mergeDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:mergeDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:mergeDebugAssets UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[   +1 ms]   Simple merging task
+[        ] Skipping task ':geocoding_android:mergeDebugAssets' as it is up-to-date.
+[        ] work action resolve mergeDebugAssets (project :geocoding_android) (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:mergeDebugShaders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geolocator_android:mergeDebugShaders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +1 ms] > Task :geolocator_android:mergeDebugShaders UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:mergeDebugShaders' because:
+[        ]   Build cache is disabled
+[   +1 ms]   Simple merging task
+[        ] Skipping task ':geolocator_android:mergeDebugShaders' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:compileDebugShaders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geolocator_android:compileDebugShaders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geolocator_android:compileDebugShaders NO-SOURCE
+[        ] Skipping task ':geolocator_android:compileDebugShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :geolocator_android:generateDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geolocator_android:generateDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geolocator_android:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':geolocator_android:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :geolocator_android:mergeDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geolocator_android:mergeDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geolocator_android:mergeDebugAssets UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geolocator_android:mergeDebugAssets' as it is up-to-date.
+[        ] work action resolve mergeDebugAssets (project :geolocator_android) (Thread[#517,Execution worker,5,main]) started.
+[        ] Resolve mutations for :app:mergeDebugAssets (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:mergeDebugAssets (Thread[#517,Execution worker,5,main]) started.
+[  +65 ms] > Task :app:mergeDebugAssets
+[        ] Caching disabled for task ':app:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':app:mergeDebugAssets' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/alfredo/Movile App/alf_film/build/app/intermediates/assets/debug/mergeDebugAssets has been removed.
+[        ] The input changes require a full rebuild for incremental task ':app:mergeDebugAssets'.
+[        ] Resolve mutations for :app:copyFlutterAssetsDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:copyFlutterAssetsDebug (Thread[#517,Execution worker,5,main]) started.
+[ +295 ms] > Task :app:copyFlutterAssetsDebug
+[        ] Caching disabled for task ':app:copyFlutterAssetsDebug' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Task ':app:copyFlutterAssetsDebug' is not up-to-date because:
+[        ]   Output property 'destinationDir' file /home/alfredo/Movile App/alf_film/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets has been removed.
+[        ]   Output property 'destinationDir' file /home/alfredo/Movile App/alf_film/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/AssetManifest.bin has been removed.
+[        ]   Output property 'destinationDir' file /home/alfredo/Movile App/alf_film/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/AssetManifest.json has been removed.
+[        ]   and more...
+[        ] Resolve mutations for :app:generateDebugResValues (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:generateDebugResValues (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:generateDebugResValues UP-TO-DATE
+[        ] Caching disabled for task ':app:generateDebugResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:generateDebugResValues' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:generateDebugResValues (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:generateDebugResValues (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:generateDebugResValues UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:generateDebugResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:generateDebugResValues' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:generateDebugResources (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:generateDebugResources (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:generateDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:generateDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:packageDebugResources (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:packageDebugResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geocoding_android:packageDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:packageDebugResources' as it is up-to-date.
+[        ] work action resolve packageDebugResources (project :geocoding_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:generateDebugResValues (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:generateDebugResValues (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:generateDebugResValues UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:generateDebugResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:generateDebugResValues' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:generateDebugResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:generateDebugResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:generateDebugResources UP-TO-DATE
+[   +1 ms] Caching disabled for task ':geolocator_android:generateDebugResources' because:
+[        ]   Build cache is disabled
+[   +1 ms] Skipping task ':geolocator_android:generateDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:packageDebugResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:packageDebugResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[  +12 ms] > Task :geolocator_android:packageDebugResources UP-TO-DATE
+[   +1 ms] Caching disabled for task ':geolocator_android:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:packageDebugResources' as it is up-to-date.
+[        ] work action resolve packageDebugResources (project :geolocator_android) (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#516,included builds,5,main]) started.
+[        ] :app:mapDebugSourceSetPaths (Thread[#516,included builds,5,main]) started.
+[  +75 ms] > Task :app:mapDebugSourceSetPaths UP-TO-DATE
+[        ] Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+[        ] Resolve mutations for :app:generateDebugResources (Thread[#516,included builds,5,main]) started.
+[        ] :app:generateDebugResources (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:generateDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':app:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:generateDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeDebugResources (Thread[#516,included builds,5,main]) started.
+[        ] :app:mergeDebugResources (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:mergeDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :app:packageDebugResources (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:packageDebugResources (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:packageDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':app:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:packageDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :app:parseDebugLocalResources (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:parseDebugLocalResources (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:parseDebugLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':app:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:createDebugCompatibleScreenManifests (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+[        ] Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+[        ] Resolve mutations for :app:extractDeepLinksDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :app:extractDeepLinksDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :app:extractDeepLinksDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:extractDeepLinksDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:extractDeepLinksDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geocoding_android:extractDeepLinksDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geocoding_android:extractDeepLinksDebug UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:extractDeepLinksDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:extractDeepLinksDebug' as it is up-to-date.
+[        ] work action resolve navigation.json (project :geocoding_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :geocoding_android:processDebugManifest (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geocoding_android:processDebugManifest (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geocoding_android:processDebugManifest UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:processDebugManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:processDebugManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :geocoding_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +2 ms] Resolve mutations for :geolocator_android:extractDeepLinksDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:extractDeepLinksDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:extractDeepLinksDebug UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:extractDeepLinksDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:extractDeepLinksDebug' as it is up-to-date.
+[        ] work action resolve navigation.json (project :geolocator_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:processDebugManifest (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:processDebugManifest (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:processDebugManifest UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:processDebugManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:processDebugManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :geolocator_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :app:processDebugMainManifest (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :app:processDebugMainManifest (Thread[#520,Execution worker Thread 3,5,main]) started.
+[  +81 ms] > Task :app:processDebugMainManifest UP-TO-DATE
+[        ] Caching disabled for task ':app:processDebugMainManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+[        ] Resolve mutations for :app:processDebugManifest (Thread[#516,included builds,5,main]) started.
+[        ] :app:processDebugManifest (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:processDebugManifest UP-TO-DATE
+[        ] Caching disabled for task ':app:processDebugManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processDebugManifest' as it is up-to-date.
+[        ] Resolve mutations for :app:processDebugManifestForPackage (Thread[#516,included builds,5,main]) started.
+[        ] :app:processDebugManifestForPackage (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:processDebugManifestForPackage UP-TO-DATE
+[        ] Custom actions are attached to task ':app:processDebugManifestForPackage'.
+[        ] Caching disabled for task ':app:processDebugManifestForPackage' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:compileDebugLibraryResources (Thread[#516,included builds,5,main]) started.
+[        ] :geocoding_android:compileDebugLibraryResources (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:compileDebugLibraryResources UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:compileDebugLibraryResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:compileDebugLibraryResources' as it is up-to-date.
+[        ] work action resolve out (project :geocoding_android) (Thread[#516,included builds,5,main]) started.
+[        ] Resolve mutations for :geocoding_android:parseDebugLocalResources (Thread[#516,included builds,5,main]) started.
+[        ] :geocoding_android:parseDebugLocalResources (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:parseDebugLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:parseDebugLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:generateDebugRFile (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geocoding_android:generateDebugRFile (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geocoding_android:generateDebugRFile UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[   +4 ms] Skipping task ':geocoding_android:generateDebugRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :geocoding_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:compileDebugLibraryResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:compileDebugLibraryResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +6 ms] > Task :geolocator_android:compileDebugLibraryResources UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:compileDebugLibraryResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:compileDebugLibraryResources' as it is up-to-date.
+[        ] work action resolve out (project :geolocator_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:parseDebugLocalResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:parseDebugLocalResources (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:parseDebugLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:parseDebugLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:generateDebugRFile (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:generateDebugRFile (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:generateDebugRFile UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:generateDebugRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :geolocator_android) (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :app:processDebugResources (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:processDebugResources (Thread[#518,Execution worker Thread 2,5,main]) started.
+[  +76 ms] > Task :app:processDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':app:processDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:javaPreCompileDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:javaPreCompileDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:javaPreCompileDebug UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:javaPreCompileDebug' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:compileDebugJavaWithJavac (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:compileDebugJavaWithJavac (Thread[#518,Execution worker Thread 2,5,main]) started.
+[  +97 ms] > Task :geocoding_android:compileDebugJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':geocoding_android:compileDebugJavaWithJavac'.
+[        ] Caching disabled for task ':geocoding_android:compileDebugJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:compileDebugJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :geocoding_android:compileDebugJavaWithJavac
+[        ] No compile result for :geocoding_android:compileDebugJavaWithJavac
+[        ] Resolve mutations for :geocoding_android:bundleLibCompileToJarDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:bundleLibCompileToJarDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:bundleLibCompileToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:bundleLibCompileToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geocoding_android:bundleLibCompileToJarDebug' as it is up-to-date.
+[   +1 ms] work action resolve classes.jar (project :geocoding_android) (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:javaPreCompileDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geolocator_android:javaPreCompileDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geolocator_android:javaPreCompileDebug UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:javaPreCompileDebug' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:compileDebugJavaWithJavac (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geolocator_android:compileDebugJavaWithJavac (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geolocator_android:compileDebugJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':geolocator_android:compileDebugJavaWithJavac'.
+[        ] Caching disabled for task ':geolocator_android:compileDebugJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geolocator_android:compileDebugJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :geolocator_android:compileDebugJavaWithJavac
+[        ] No compile result for :geolocator_android:compileDebugJavaWithJavac
+[        ] Resolve mutations for :geolocator_android:bundleLibCompileToJarDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geolocator_android:bundleLibCompileToJarDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geolocator_android:bundleLibCompileToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:bundleLibCompileToJarDebug' because:
+[        ]   Build cache is disabled
+[   +1 ms]   Simple merging task
+[        ] Skipping task ':geolocator_android:bundleLibCompileToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :geolocator_android) (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +2 ms] Resolve mutations for :app:compileDebugKotlin (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:compileDebugKotlin (Thread[#518,Execution worker Thread 2,5,main]) started.
+[  +94 ms] > Task :app:compileDebugKotlin UP-TO-DATE
+[        ] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+[        ] Caching disabled for task ':app:compileDebugKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compileDebugKotlin' as it is up-to-date.
+[        ] Resolve mutations for :app:javaPreCompileDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:javaPreCompileDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:javaPreCompileDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:javaPreCompileDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:compileDebugJavaWithJavac (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:compileDebugJavaWithJavac (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:compileDebugJavaWithJavac UP-TO-DATE
+[   +1 ms] Custom actions are attached to task ':app:compileDebugJavaWithJavac'.
+[        ] Caching disabled for task ':app:compileDebugJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compileDebugJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :app:compileDebugJavaWithJavac
+[        ] No compile result for :app:compileDebugJavaWithJavac
+[        ] Resolve mutations for :app:compressDebugAssets (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:compressDebugAssets (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:compressDebugAssets UP-TO-DATE
+[        ] Caching disabled for task ':app:compressDebugAssets' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compressDebugAssets' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:bundleLibRuntimeToJarDebug (Thread[#516,included builds,5,main]) started.
+[   +2 ms] :geocoding_android:bundleLibRuntimeToJarDebug (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:bundleLibRuntimeToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:bundleLibRuntimeToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geocoding_android:bundleLibRuntimeToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :geocoding_android) (Thread[#516,included builds,5,main]) started.
+[        ] IdentityTransform (Thread[#516,included builds,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:bundleLibRuntimeToJarDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#516,included builds,5,main]) started.
+[   +2 ms] :geolocator_android:bundleLibRuntimeToJarDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:bundleLibRuntimeToJarDebug UP-TO-DATE
+[  +15 ms] Caching disabled for task ':geolocator_android:bundleLibRuntimeToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geolocator_android:bundleLibRuntimeToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :geolocator_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] IdentityTransform (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :app:desugarDebugFileDependencies (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:desugarDebugFileDependencies (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Transform classes.jar (project :geolocator_android) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/alfredo/Movile App/alf_film/build/geolocator_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar because:
+[        ]   Build cache is disabled
+[   +2 ms] Skipping DexingNoClasspathTransform: /home/alfredo/Movile App/alf_film/build/geolocator_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Transform classes.jar (project :geocoding_android) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/alfredo/Movile App/alf_film/build/geocoding_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar because:
+[        ]   Build cache is disabled
+[   +5 ms] Skipping DexingNoClasspathTransform: /home/alfredo/Movile App/alf_film/build/geocoding_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:desugarDebugFileDependencies UP-TO-DATE
+[        ] Caching disabled for task ':app:desugarDebugFileDependencies' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:desugarDebugFileDependencies' as it is up-to-date.
+[        ] Resolve mutations for :app:dexBuilderDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:dexBuilderDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:dexBuilderDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:dexBuilderDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:dexBuilderDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeDebugGlobalSynthetics (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:mergeDebugGlobalSynthetics (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugGlobalSynthetics' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeDebugGlobalSynthetics' as it is up-to-date.
+[   +2 ms] Resolve mutations for :app:processDebugJavaRes (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:processDebugJavaRes (Thread[#518,Execution worker Thread 2,5,main]) started.
+[  +44 ms] > Task :app:processDebugJavaRes UP-TO-DATE
+[        ] file or directory '/home/alfredo/Movile App/alf_film/android/app/src/main/resources', not found
+[        ] file or directory '/home/alfredo/Movile App/alf_film/android/app/src/debug/resources', not found
+[        ] file or directory '/home/alfredo/Movile App/alf_film/android/app/src/main/resources', not found
+[        ] file or directory '/home/alfredo/Movile App/alf_film/android/app/src/debug/resources', not found
+[        ] Caching disabled for task ':app:processDebugJavaRes' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:processDebugJavaRes' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:processDebugJavaRes (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:processDebugJavaRes (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:processDebugJavaRes NO-SOURCE
+[        ] file or directory '/home/alfredo/.pub-cache/hosted/pub.dev/geocoding_android-3.3.1/android/src/main/resources', not found
+[        ] file or directory '/home/alfredo/.pub-cache/hosted/pub.dev/geocoding_android-3.3.1/android/src/debug/resources', not found
+[        ] Skipping task ':geocoding_android:processDebugJavaRes' as it has no source files and no previous output files.
+[        ] work action resolve out (project :geocoding_android) (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:processDebugJavaRes (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geolocator_android:processDebugJavaRes (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geolocator_android:processDebugJavaRes NO-SOURCE
+[        ] file or directory '/home/alfredo/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/android/src/main/resources', not found
+[        ] file or directory '/home/alfredo/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/android/src/debug/resources', not found
+[        ] Skipping task ':geolocator_android:processDebugJavaRes' as it has no source files and no previous output files.
+[        ] work action resolve out (project :geolocator_android) (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :app:mergeDebugJavaResource (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:mergeDebugJavaResource (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:mergeDebugJavaResource UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugJavaResource' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:mergeDebugJavaResource' as it is up-to-date.
+[        ] Resolve mutations for :app:checkDebugDuplicateClasses (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:checkDebugDuplicateClasses (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:checkDebugDuplicateClasses UP-TO-DATE
+[        ] Caching disabled for task ':app:checkDebugDuplicateClasses' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:checkDebugDuplicateClasses' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeExtDexDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:mergeExtDexDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:mergeExtDexDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeExtDexDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeExtDexDebug' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:bundleLibRuntimeToDirDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:bundleLibRuntimeToDirDebug (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:bundleLibRuntimeToDirDebug UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:bundleLibRuntimeToDirDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geocoding_android:bundleLibRuntimeToDirDebug' as it is up-to-date.
+[        ] work action resolve bundleLibRuntimeToDirDebug (project :geocoding_android) (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] ClassesDirToClassesTransform (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:bundleLibRuntimeToDirDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +9 ms] :geolocator_android:bundleLibRuntimeToDirDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geolocator_android:bundleLibRuntimeToDirDebug UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:bundleLibRuntimeToDirDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geolocator_android:bundleLibRuntimeToDirDebug' as it is up-to-date.
+[        ] work action resolve bundleLibRuntimeToDirDebug (project :geolocator_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] ClassesDirToClassesTransform (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :app:mergeProjectDexDebug (Thread[#516,included builds,5,main]) started.
+[        ] > Transform bundleLibRuntimeToDirDebug (project :geocoding_android) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/alfredo/Movile App/alf_film/build/geocoding_android/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+[        ]   Build cache is disabled
+[        ] Skipping DexingNoClasspathTransform: /home/alfredo/Movile App/alf_film/build/geocoding_android/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +7 ms] :app:mergeProjectDexDebug (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:mergeProjectDexDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeProjectDexDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeProjectDexDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:configureCMakeDebug[arm64-v8a] (Thread[#516,included builds,5,main]) started.
+[        ] :app:configureCMakeDebug[arm64-v8a] (Thread[#516,included builds,5,main]) started.
+[  +66 ms] > Transform bundleLibRuntimeToDirDebug (project :geolocator_android) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/alfredo/Movile App/alf_film/build/geolocator_android/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+[        ]   Build cache is disabled
+[        ] Skipping DexingNoClasspathTransform: /home/alfredo/Movile App/alf_film/build/geolocator_android/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :app:configureCMakeDebug[arm64-v8a]
+[        ] Caching disabled for task ':app:configureCMakeDebug[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeDebug[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|arm64-v8a : Start JSON generation. Platform version: 24 min SDK version: arm64-v8a
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|arm64-v8a : JSON '/home/alfredo/Movile App/alf_film/build/.cxx/debug/6m73643a/arm64-v8a/android_gradle_build.json' was up-to-date
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|arm64-v8a : JSON generation completed without problems
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|arm64-v8a : Writing build model to /home/alfredo/Movile App/alf_film/build/app/intermediates/cxx/debug/6m73643a/logs/arm64-v8a/build_model.json
+[        ] Resolve mutations for :app:mergeLibDexDebug (Thread[#516,included builds,5,main]) started.
+[        ] :app:mergeLibDexDebug (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:mergeLibDexDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeLibDexDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeLibDexDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:buildCMakeDebug[arm64-v8a] (Thread[#516,included builds,5,main]) started.
+[        ] :app:buildCMakeDebug[arm64-v8a] (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:buildCMakeDebug[arm64-v8a]
+[        ] Caching disabled for task ':app:buildCMakeDebug[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeDebug[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:configureCMakeDebug[armeabi-v7a] (Thread[#516,included builds,5,main]) started.
+[        ] :app:configureCMakeDebug[armeabi-v7a] (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:configureCMakeDebug[armeabi-v7a]
+[        ] Caching disabled for task ':app:configureCMakeDebug[armeabi-v7a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeDebug[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|armeabi-v7a : Start JSON generation. Platform version: 24 min SDK version: armeabi-v7a
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|armeabi-v7a : JSON '/home/alfredo/Movile App/alf_film/build/.cxx/debug/6m73643a/armeabi-v7a/android_gradle_build.json' was up-to-date
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|armeabi-v7a : JSON generation completed without problems
+[   +1 ms] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|armeabi-v7a : Writing build model to /home/alfredo/Movile App/alf_film/build/app/intermediates/cxx/debug/6m73643a/logs/armeabi-v7a/build_model.json
+[        ] Resolve mutations for :app:buildCMakeDebug[armeabi-v7a] (Thread[#516,included builds,5,main]) started.
+[        ] :app:buildCMakeDebug[armeabi-v7a] (Thread[#516,included builds,5,main]) started.
+[        ] > Task :app:buildCMakeDebug[armeabi-v7a]
+[        ] Caching disabled for task ':app:buildCMakeDebug[armeabi-v7a]' because:
+[   +2 ms]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeDebug[armeabi-v7a]' is not up-to-date because:
+[   +1 ms]   Task.upToDateWhen is false.
+[   +1 ms] C/C++: starting build
+[   +1 ms] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[   +3 ms] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[   +1 ms] C/C++: no libraries
+[        ] Resolve mutations for :app:configureCMakeDebug[x86_64] (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +1 ms] :app:configureCMakeDebug[x86_64] (Thread[#518,Execution worker Thread 2,5,main]) started.
+[  +74 ms] > Task :app:configureCMakeDebug[x86_64]
+[        ] Caching disabled for task ':app:configureCMakeDebug[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeDebug[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|x86_64 : Start JSON generation. Platform version: 24 min SDK version: x86_64
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|x86_64 : JSON '/home/alfredo/Movile App/alf_film/build/.cxx/debug/6m73643a/x86_64/android_gradle_build.json' was up-to-date
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|x86_64 : JSON generation completed without problems
+[        ] C/C++: /opt/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|x86_64 : Writing build model to /home/alfredo/Movile App/alf_film/build/app/intermediates/cxx/debug/6m73643a/logs/x86_64/build_model.json
+[        ] Resolve mutations for :app:buildCMakeDebug[x86_64] (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:buildCMakeDebug[x86_64] (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:buildCMakeDebug[x86_64]
+[        ] Caching disabled for task ':app:buildCMakeDebug[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeDebug[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:mergeDebugJniLibFolders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :app:mergeDebugJniLibFolders (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:mergeDebugJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':app:mergeDebugJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:mergeDebugJniLibFolders (Thread[#516,included builds,5,main]) started.
+[        ] :geocoding_android:mergeDebugJniLibFolders (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:mergeDebugJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:mergeDebugJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geocoding_android:mergeDebugJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:mergeDebugNativeLibs (Thread[#516,included builds,5,main]) started.
+[        ] :geocoding_android:mergeDebugNativeLibs (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:mergeDebugNativeLibs NO-SOURCE
+[        ] Skipping task ':geocoding_android:mergeDebugNativeLibs' as it has no source files and no previous output files.
+[        ] Resolve mutations for :geocoding_android:copyDebugJniLibsProjectOnly (Thread[#516,included builds,5,main]) started.
+[        ] :geocoding_android:copyDebugJniLibsProjectOnly (Thread[#516,included builds,5,main]) started.
+[   +2 ms] > Task :geocoding_android:copyDebugJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:copyDebugJniLibsProjectOnly' because:
+[   +1 ms]   Build cache is disabled
+[   +8 ms]   Caching has been disabled for the task
+[        ] Skipping task ':geocoding_android:copyDebugJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :geocoding_android) (Thread[#516,included builds,5,main]) started.
+[        ] Resolve mutations for :geolocator_android:mergeDebugJniLibFolders (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:mergeDebugJniLibFolders (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:mergeDebugJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:mergeDebugJniLibFolders' because:
+[   +1 ms]   Build cache is disabled
+[        ]   Simple merging task
+[   +2 ms] Skipping task ':geolocator_android:mergeDebugJniLibFolders' as it is up-to-date.
+[   +1 ms] Resolve mutations for :geolocator_android:mergeDebugNativeLibs (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:mergeDebugNativeLibs (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:mergeDebugNativeLibs NO-SOURCE
+[        ] Skipping task ':geolocator_android:mergeDebugNativeLibs' as it has no source files and no previous output files.
+[        ] Resolve mutations for :geolocator_android:copyDebugJniLibsProjectOnly (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:copyDebugJniLibsProjectOnly (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:copyDebugJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:copyDebugJniLibsProjectOnly' because:
+[        ]   Build cache is disabled
+[   +3 ms]   Caching has been disabled for the task
+[        ] Skipping task ':geolocator_android:copyDebugJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :geolocator_android) (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :app:mergeDebugNativeLibs (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :app:mergeDebugNativeLibs (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :app:mergeDebugNativeLibs UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugNativeLibs' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:mergeDebugNativeLibs' as it is up-to-date.
+[        ] Resolve mutations for :app:stripDebugDebugSymbols (Thread[#516,included builds,5,main]) started.
+[        ] :app:stripDebugDebugSymbols (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:stripDebugDebugSymbols UP-TO-DATE
+[        ] Caching disabled for task ':app:stripDebugDebugSymbols' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:stripDebugDebugSymbols' as it is up-to-date.
+[        ] Resolve mutations for :app:validateSigningDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:validateSigningDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:validateSigningDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:validateSigningDebug' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:validateSigningDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:writeDebugAppMetadata (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:writeDebugAppMetadata (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:writeDebugAppMetadata UP-TO-DATE
+[        ] Caching disabled for task ':app:writeDebugAppMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:writeDebugAppMetadata' as it is up-to-date.
+[        ] Resolve mutations for :app:writeDebugSigningConfigVersions (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:writeDebugSigningConfigVersions (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+[        ] Caching disabled for task ':app:writeDebugSigningConfigVersions' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:writeDebugSigningConfigVersions' as it is up-to-date.
+[        ] Resolve mutations for :app:packageDebug (Thread[#517,Execution worker,5,main]) started.
+[        ] :app:packageDebug (Thread[#517,Execution worker,5,main]) started.
+[  +14 ms] > Task :app:packageDebug UP-TO-DATE
+[        ] Custom actions are attached to task ':app:packageDebug'.
+[        ] Caching disabled for task ':app:packageDebug' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:packageDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:createDebugApkListingFileRedirect (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :app:createDebugApkListingFileRedirect (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+[        ] Caching disabled for task ':app:createDebugApkListingFileRedirect' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:createDebugApkListingFileRedirect' as it is up-to-date.
+[        ] Resolve mutations for :app:assembleDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :app:assembleDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[ +441 ms] > Task :app:assembleDebug
+[        ] Caching disabled for task ':app:assembleDebug' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:assembleDebug' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :geocoding_android:stripDebugDebugSymbols (Thread[#517,Execution worker,5,main]) started.
+[        ] :geocoding_android:stripDebugDebugSymbols (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :geocoding_android:stripDebugDebugSymbols NO-SOURCE
+[        ] Skipping task ':geocoding_android:stripDebugDebugSymbols' as it has no source files and no previous output files.
+[        ] Resolve mutations for :geocoding_android:copyDebugJniLibsProjectAndLocalJars (Thread[#517,Execution worker,5,main]) started.
+[        ] :geocoding_android:copyDebugJniLibsProjectAndLocalJars (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :geocoding_android:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:copyDebugJniLibsProjectAndLocalJars' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':geocoding_android:copyDebugJniLibsProjectAndLocalJars' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:extractDebugAnnotations (Thread[#517,Execution worker,5,main]) started.
+[        ] :geocoding_android:extractDebugAnnotations (Thread[#517,Execution worker,5,main]) started.
+[        ] > Task :geocoding_android:extractDebugAnnotations UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:extractDebugAnnotations' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:extractDebugAnnotations' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:extractDeepLinksForAarDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geocoding_android:extractDeepLinksForAarDebug (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +3 ms] > Task :geocoding_android:extractDeepLinksForAarDebug UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:extractDeepLinksForAarDebug' because:
+[        ]   Build cache is disabled
+[   +1 ms] Skipping task ':geocoding_android:extractDeepLinksForAarDebug' as it is up-to-date.
+[   +3 ms] Resolve mutations for :geocoding_android:mergeDebugGeneratedProguardFiles (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geocoding_android:mergeDebugGeneratedProguardFiles (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geocoding_android:mergeDebugGeneratedProguardFiles UP-TO-DATE
+[   +2 ms] Caching disabled for task ':geocoding_android:mergeDebugGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geocoding_android:mergeDebugGeneratedProguardFiles' as it is up-to-date.
+[   +1 ms] Resolve mutations for :geocoding_android:mergeDebugConsumerProguardFiles (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:mergeDebugConsumerProguardFiles (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +3 ms] > Task :geocoding_android:mergeDebugConsumerProguardFiles UP-TO-DATE
+[   +3 ms] Caching disabled for task ':geocoding_android:mergeDebugConsumerProguardFiles' because:
+[   +1 ms]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geocoding_android:mergeDebugConsumerProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:prepareDebugArtProfile (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +1 ms] :geocoding_android:prepareDebugArtProfile (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +2 ms] > Task :geocoding_android:prepareDebugArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:prepareDebugArtProfile' because:
+[        ]   Build cache is disabled
+[   +3 ms]   Caching has been disabled for the task
+[        ] Skipping task ':geocoding_android:prepareDebugArtProfile' as it is up-to-date.
+[   +2 ms] Resolve mutations for :geocoding_android:prepareLintJarForPublish (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +2 ms] :geocoding_android:prepareLintJarForPublish (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] > Task :geocoding_android:prepareLintJarForPublish UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:prepareLintJarForPublish' because:
+[        ]   Build cache is disabled
+[   +2 ms]   Caching has been disabled for the task
+[        ] Skipping task ':geocoding_android:prepareLintJarForPublish' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:mergeDebugJavaResource (Thread[#518,Execution worker Thread 2,5,main]) started.
+[        ] :geocoding_android:mergeDebugJavaResource (Thread[#518,Execution worker Thread 2,5,main]) started.
+[   +3 ms] > Task :geocoding_android:mergeDebugJavaResource UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:mergeDebugJavaResource' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':geocoding_android:mergeDebugJavaResource' as it is up-to-date.
+[   +2 ms] Resolve mutations for :geocoding_android:syncDebugLibJars (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geocoding_android:syncDebugLibJars (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:syncDebugLibJars UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:syncDebugLibJars' because:
+[   +5 ms]   Build cache is disabled
+[        ] Skipping task ':geocoding_android:syncDebugLibJars' as it is up-to-date.
+[   +1 ms] Resolve mutations for :geocoding_android:bundleDebugAar (Thread[#516,included builds,5,main]) started.
+[        ] :geocoding_android:bundleDebugAar (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geocoding_android:bundleDebugAar UP-TO-DATE
+[        ] Caching disabled for task ':geocoding_android:bundleDebugAar' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[   +1 ms] Skipping task ':geocoding_android:bundleDebugAar' as it is up-to-date.
+[        ] Resolve mutations for :geocoding_android:assembleDebug (Thread[#516,included builds,5,main]) started.
+[   +1 ms] :geocoding_android:assembleDebug (Thread[#516,included builds,5,main]) started.
+[   +5 ms] > Task :geocoding_android:assembleDebug UP-TO-DATE
+[        ] Skipping task ':geocoding_android:assembleDebug' as it has no actions.
+[   +1 ms] Resolve mutations for :geolocator_android:stripDebugDebugSymbols (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:stripDebugDebugSymbols (Thread[#516,included builds,5,main]) started.
+[   +1 ms] > Task :geolocator_android:stripDebugDebugSymbols NO-SOURCE
+[        ] Skipping task ':geolocator_android:stripDebugDebugSymbols' as it has no source files and no previous output files.
+[        ] Resolve mutations for :geolocator_android:copyDebugJniLibsProjectAndLocalJars (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:copyDebugJniLibsProjectAndLocalJars (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:copyDebugJniLibsProjectAndLocalJars' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':geolocator_android:copyDebugJniLibsProjectAndLocalJars' as it is up-to-date.
+[   +1 ms] Resolve mutations for :geolocator_android:extractDebugAnnotations (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +5 ms] :geolocator_android:extractDebugAnnotations (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +1 ms] > Task :geolocator_android:extractDebugAnnotations UP-TO-DATE
+[   +1 ms] Caching disabled for task ':geolocator_android:extractDebugAnnotations' because:
+[        ]   Build cache is disabled
+[   +1 ms] Skipping task ':geolocator_android:extractDebugAnnotations' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:extractDeepLinksForAarDebug (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:extractDeepLinksForAarDebug (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:extractDeepLinksForAarDebug UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:extractDeepLinksForAarDebug' because:
+[        ]   Build cache is disabled
+[   +1 ms] Skipping task ':geolocator_android:extractDeepLinksForAarDebug' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:mergeDebugGeneratedProguardFiles (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:mergeDebugGeneratedProguardFiles (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:mergeDebugGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:mergeDebugGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geolocator_android:mergeDebugGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:mergeDebugConsumerProguardFiles (Thread[#516,included builds,5,main]) started.
+[   +1 ms] :geolocator_android:mergeDebugConsumerProguardFiles (Thread[#516,included builds,5,main]) started.
+[   +3 ms] > Task :geolocator_android:mergeDebugConsumerProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:mergeDebugConsumerProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':geolocator_android:mergeDebugConsumerProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:prepareDebugArtProfile (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:prepareDebugArtProfile (Thread[#516,included builds,5,main]) started.
+[   +1 ms] > Task :geolocator_android:prepareDebugArtProfile UP-TO-DATE
+[   +3 ms] Caching disabled for task ':geolocator_android:prepareDebugArtProfile' because:
+[   +1 ms]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[   +1 ms] Skipping task ':geolocator_android:prepareDebugArtProfile' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:prepareLintJarForPublish (Thread[#516,included builds,5,main]) started.
+[        ] :geolocator_android:prepareLintJarForPublish (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:prepareLintJarForPublish UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:prepareLintJarForPublish' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':geolocator_android:prepareLintJarForPublish' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:mergeDebugJavaResource (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +1 ms] :geolocator_android:mergeDebugJavaResource (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +1 ms] > Task :geolocator_android:mergeDebugJavaResource UP-TO-DATE
+[   +1 ms] Caching disabled for task ':geolocator_android:mergeDebugJavaResource' because:
+[   +1 ms]   Build cache is disabled
+[   +2 ms]   Caching has been disabled for the task
+[   +1 ms] Skipping task ':geolocator_android:mergeDebugJavaResource' as it is up-to-date.
+[   +1 ms] Resolve mutations for :geolocator_android:syncDebugLibJars (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:syncDebugLibJars (Thread[#520,Execution worker Thread 3,5,main]) started.
+[   +1 ms] > Task :geolocator_android:syncDebugLibJars UP-TO-DATE
+[   +1 ms] Caching disabled for task ':geolocator_android:syncDebugLibJars' because:
+[        ]   Build cache is disabled
+[   +1 ms] Skipping task ':geolocator_android:syncDebugLibJars' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:bundleDebugAar (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] :geolocator_android:bundleDebugAar (Thread[#520,Execution worker Thread 3,5,main]) started.
+[        ] > Task :geolocator_android:bundleDebugAar UP-TO-DATE
+[        ] Caching disabled for task ':geolocator_android:bundleDebugAar' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[   +1 ms] Skipping task ':geolocator_android:bundleDebugAar' as it is up-to-date.
+[        ] Resolve mutations for :geolocator_android:assembleDebug (Thread[#516,included builds,5,main]) started.
+[   +1 ms] :geolocator_android:assembleDebug (Thread[#516,included builds,5,main]) started.
+[        ] > Task :geolocator_android:assembleDebug UP-TO-DATE
+[        ] Skipping task ':geolocator_android:assembleDebug' as it has no actions.
+[  +33 ms] [Incubating] Problems report is available at: file:///home/alfredo/Movile%20App/alf_film/build/reports/problems/problems-report.html
+[        ] Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+[        ] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+[        ] For more on this, please refer to https://docs.gradle.org/8.12/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+[        ] BUILD SUCCESSFUL in 4s
+[        ] 108 actionable tasks: 11 executed, 97 up-to-date
+[        ] Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.
+[  +47 ms] Running Gradle task 'assembleDebug'... (completed in 5,1s)
+[   +2 ms] Calculate SHA1: LocalDirectory: '/home/alfredo/Movile App/alf_film/build/app/outputs/flutter-apk'/app-debug.apk
+[+1583 ms] ✓ Built build/app/outputs/flutter-apk/app-debug.apk
+[   +6 ms] executing: /home/alfredo/Android/Sdk/build-tools/35.0.1/aapt dump xmltree /home/alfredo/Movile App/alf_film/build/app/outputs/flutter-apk/app-debug.apk AndroidManifest.xml
+[  +14 ms] Exit code 0 from: /home/alfredo/Android/Sdk/build-tools/35.0.1/aapt dump xmltree /home/alfredo/Movile App/alf_film/build/app/outputs/flutter-apk/app-debug.apk AndroidManifest.xml
+[   +1 ms] N: android=http://schemas.android.com/apk/res/android
+             E: manifest (line=2)
+               A: android:versionCode(0x0101021b)=(type 0x10)0x1
+               A: android:versionName(0x0101021c)="1.0.0" (Raw: "1.0.0")
+               A: android:compileSdkVersion(0x01010572)=(type 0x10)0x24
+               A: android:compileSdkVersionCodename(0x01010573)="16" (Raw: "16")
+               A: package="com.example.alf_film" (Raw: "com.example.alf_film")
+               A: platformBuildVersionCode=(type 0x10)0x24
+               A: platformBuildVersionName=(type 0x10)0x10
+               E: uses-sdk (line=7)
+                 A: android:minSdkVersion(0x0101020c)=(type 0x10)0x18
+                 A: android:targetSdkVersion(0x01010270)=(type 0x10)0x24
+               E: uses-permission (line=15)
+                 A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+               E: uses-permission (line=17)
+                 A: android:name(0x01010003)="android.permission.ACCESS_FINE_LOCATION" (Raw: "android.permission.ACCESS_FINE_LOCATION")
+               E: uses-permission (line=18)
+                 A: android:name(0x01010003)="android.permission.ACCESS_COARSE_LOCATION" (Raw: "android.permission.ACCESS_COARSE_LOCATION")
+               E: queries (line=26)
+                 E: intent (line=27)
+                   E: action (line=28)
+                     A: android:name(0x01010003)="android.intent.action.PROCESS_TEXT" (Raw: "android.intent.action.PROCESS_TEXT")
+                   E: data (line=30)
+                     A: android:mimeType(0x01010026)="text/plain" (Raw: "text/plain")
+               E: permission (line=34)
+                 A: android:name(0x01010003)="com.example.alf_film.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "com.example.alf_film.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+                 A: android:protectionLevel(0x01010009)=(type 0x11)0x2
+               E: uses-permission (line=38)
+                 A: android:name(0x01010003)="com.example.alf_film.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "com.example.alf_film.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+               E: application (line=40)
+                 A: android:label(0x01010001)="alf_film" (Raw: "alf_film")
+                 A: android:icon(0x01010002)=@0x7f0a0000
+                 A: android:name(0x01010003)="android.app.Application" (Raw: "android.app.Application")
+                 A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+                 A: android:extractNativeLibs(0x010104ea)=(type 0x12)0x0
+                 A: android:appComponentFactory(0x0101057a)="androidx.core.app.CoreComponentFactory" (Raw: "androidx.core.app.CoreComponentFactory")
+                 E: activity (line=47)
+                   A: android:theme(0x01010000)=@0x7f0c0000
+                   A: android:name(0x01010003)="com.example.alf_film.MainActivity" (Raw: "com.example.alf_film.MainActivity")
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:taskAffinity(0x01010012)="" (Raw: "")
+                   A: android:launchMode(0x0101001d)=(type 0x10)0x1
+                   A: android:configChanges(0x0101001f)=(type 0x11)0x40003fb4
+                   A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x10
+                   A: android:hardwareAccelerated(0x010102d3)=(type 0x12)0xffffffff
+                   E: meta-data (line=63)
+                     A: android:name(0x01010003)="io.flutter.embedding.android.NormalTheme" (Raw: "io.flutter.embedding.android.NormalTheme")
+                     A: android:resource(0x01010025)=@0x7f0c0001
+                   E: intent-filter (line=67)
+                     E: action (line=68)
+                       A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+                     E: category (line=70)
+                       A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+                 E: meta-data (line=77)
+                   A: android:name(0x01010003)="flutterEmbedding" (Raw: "flutterEmbedding")
+                   A: android:value(0x01010024)=(type 0x10)0x2
+                 E: service (line=81)
+                   A: android:name(0x01010003)="com.baseflow.geolocator.GeolocatorLocationService" (Raw: "com.baseflow.geolocator.GeolocatorLocationService")
+                   A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   A: android:foregroundServiceType(0x01010599)=(type 0x11)0x8
+                 E: uses-library (line=87)
+                   A: android:name(0x01010003)="androidx.window.extensions" (Raw: "androidx.window.extensions")
+                   A: android:required(0x0101028e)=(type 0x12)0x0
+                 E: uses-library (line=90)
+                   A: android:name(0x01010003)="androidx.window.sidecar" (Raw: "androidx.window.sidecar")
+                   A: android:required(0x0101028e)=(type 0x12)0x0
+                 E: activity (line=94)
+                   A: android:theme(0x01010000)=@0x01030010
+                   A: android:name(0x01010003)="com.google.android.gms.common.api.GoogleApiActivity" (Raw: "com.google.android.gms.common.api.GoogleApiActivity")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                 E: meta-data (line=99)
+                   A: android:name(0x01010003)="com.google.android.gms.version" (Raw: "com.google.android.gms.version")
+                   A: android:value(0x01010024)=@0x7f080000
+                 E: provider (line=103)
+                   A: android:name(0x01010003)="androidx.startup.InitializationProvider" (Raw: "androidx.startup.InitializationProvider")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   A: android:authorities(0x01010018)="com.example.alf_film.androidx-startup" (Raw: "com.example.alf_film.androidx-startup")
+                   E: meta-data (line=107)
+                     A: android:name(0x01010003)="androidx.lifecycle.ProcessLifecycleInitializer" (Raw: "androidx.lifecycle.ProcessLifecycleInitializer")
+                     A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+                   E: meta-data (line=110)
+                     A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallerInitializer" (Raw: "androidx.profileinstaller.ProfileInstallerInitializer")
+                     A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+                 E: receiver (line=115)
+                   A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallReceiver" (Raw: "androidx.profileinstaller.ProfileInstallReceiver")
+                   A: android:permission(0x01010006)="android.permission.DUMP" (Raw: "android.permission.DUMP")
+                   A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:directBootAware(0x01010505)=(type 0x12)0x0
+                   E: intent-filter (line=121)
+                     E: action (line=122)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.INSTALL_PROFILE" (Raw: "androidx.profileinstaller.action.INSTALL_PROFILE")
+                   E: intent-filter (line=124)
+                     E: action (line=125)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.SKIP_FILE" (Raw: "androidx.profileinstaller.action.SKIP_FILE")
+                   E: intent-filter (line=127)
+                     E: action (line=128)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.SAVE_PROFILE" (Raw: "androidx.profileinstaller.action.SAVE_PROFILE")
+                   E: intent-filter (line=130)
+                     E: action (line=131)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.BENCHMARK_OPERATION" (Raw: "androidx.profileinstaller.action.BENCHMARK_OPERATION")
+[  +11 ms] Stopping app 'app-debug.apk' on M2103K19G.
+[   +2 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb -s adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp shell am force-stop com.example.alf_film
+[ +130 ms] Installing APK.
+[   +4 ms] Installing build/app/outputs/flutter-apk/app-debug.apk...
+[        ] executing: /home/alfredo/Android/Sdk/platform-tools/adb -s adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp install -t -r /home/alfredo/Movile App/alf_film/build/app/outputs/flutter-apk/app-debug.apk
+[+6152 ms] Performing Streamed Install
+           Success
+[        ] Installing build/app/outputs/flutter-apk/app-debug.apk... (completed in 6,2s)
+[   +2 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb -s adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp shell echo -n 862c4a3d1c72cb21bb292403050d7f03ad36089f > /data/local/tmp/sky.com.example.alf_film.sha1
+[  +99 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb -s adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp shell -x logcat -v time -t 1
+[ +724 ms] --------- beginning of main
+           10-31 16:21:37.487 I/Finsky  (26026): [2061] AIM: AppInfoManager-Perf > maybeDestroyAppInfoManager is called. actives = 1
+[  +62 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb -s adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp shell am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x20000000 --ez enable-dart-profiling true --ez enable-checked-mode true --ez verify-entry-points true com.example.alf_film/com.example.alf_film.MainActivity
+[ +134 ms] Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x20000000 cmp=com.example.alf_film/.MainActivity (has extras) }
+[   +1 ms] Waiting for VM Service port to be available...
+[ +407 ms] D/FlutterJNI( 8670): Beginning load of flutter...
+[  +30 ms] D/FlutterJNI( 8670): flutter (null) was loaded normally!
+[ +794 ms] I/flutter ( 8670): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+[ +320 ms] VM Service URL on device: http://127.0.0.1:34879/9YRgognOsVM=/
+[   +6 ms] executing: /home/alfredo/Android/Sdk/platform-tools/adb -s adb-e6prcmi7m7uo6ddi-DADeCn._adb-tls-connect._tcp forward tcp:0 tcp:34879
+[  +52 ms] 36813
+[   +1 ms] Forwarded host port 36813 to device port 34879 for VM Service
+[  +30 ms] Caching compiled dill
+[ +155 ms] Connecting to service protocol: http://127.0.0.1:36813/9YRgognOsVM=/
+[  +15 ms] D/FlutterGeolocator( 8670): Attaching Geolocator to activity
+[ +685 ms] Launching a Dart Developer Service (DDS) instance at http://127.0.0.1:0, connecting to VM service at http://127.0.0.1:36813/9YRgognOsVM=/.
+[+159725 ms] Running 3 shutdown hooks
+[   +2 ms] Shutdown hooks complete
+[   +8 ms] Fail to connect to service protocol: http://127.0.0.1:36813/9YRgognOsVM=/: getVersion: (-32000) Service connection disposed
+[   +2 ms] "flutter run" took 179.301ms.
+[        ] Running 3 shutdown hooks
+[        ] Shutdown hooks complete
+[        ] Running 3 shutdown hooks
+[        ] Shutdown hooks complete
+[        ] exiting with code 0
