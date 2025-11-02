@@ -25,13 +25,22 @@ class LocationConfirmationScreen extends StatelessWidget {
                   'No se recibió ubicación.',
                   style: TextStyle(color: Colors.white),
                 )
-              : FutureBuilder<String>(
-                  future: getCityFromPosition(position),
+              : FutureBuilder<Map<String, String>>(
+                  future: getLocationFromPosition(position),
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.waiting) {
                       return CircularProgressIndicator();
                     }
-                    final city = snapshot.data ?? 'Ubicación desconocida';
+                    final locationData =
+                        snapshot.data ??
+                        {
+                          'city': 'desconocida',
+                          'country': 'desconocido',
+                          'countrycode': 'desconocido',
+                        };
+                    final city = locationData['city']!;
+                    final country = locationData['country']!;
+                    final countrycode = locationData['countrycode']!;
                     return Column(
                       mainAxisAlignment:
                           MainAxisAlignment.start, // <- Posición superior
@@ -48,16 +57,40 @@ class LocationConfirmationScreen extends StatelessWidget {
                           style: TextStyle(fontSize: 18, color: Colors.white),
                           textAlign: TextAlign.center,
                         ),
+                        Text(
+                          country,
+                          style: TextStyle(fontSize: 18, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
                         SizedBox(height: 30),
                         ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, '/movies');
+                            Navigator.pushNamed(
+                              context,
+                              '/movies',
+                              arguments: {
+                                'country': country,
+                                'city': city,
+                                'countrycode': countrycode,
+                              },
+                            );
                           },
-                          child: Text('Sí, continuar'),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            foregroundColor: Colors.indigo,
+                          ),
+                          child: Text(
+                            'Sí, continuar',
+                            style: TextStyle(fontSize: 16),
+                          ),
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, '/manual');
+                            Navigator.pushNamed(
+                              context,
+                              '/manual',
+                              arguments: {'country': country, 'city': city},
+                            );
                           },
                           child: Text(
                             'No, seleccionar manualmente',
@@ -74,6 +107,27 @@ class LocationConfirmationScreen extends StatelessWidget {
   }
 }
 
+Future<Map<String, String>> getLocationFromPosition(Position position) async {
+  List<Placemark> placemarks = await placemarkFromCoordinates(
+    position.latitude,
+    position.longitude,
+  );
+  if (placemarks.isNotEmpty) {
+    final placemark = placemarks.first;
+    return {
+      'city': placemark.locality ?? 'Desconocida',
+      'country': placemark.country ?? 'Desconocido',
+      'countrycode': placemark.isoCountryCode ?? 'Desconocido',
+    };
+  }
+  return {
+    'city': 'Desconocida',
+    'country': 'Desconocido',
+    'countrycode': 'Desconocido',
+  };
+}
+
+/*
 Future<String> getCityFromPosition(Position position) async {
   try {
     List<Placemark> placemarks = await placemarkFromCoordinates(
@@ -89,3 +143,4 @@ Future<String> getCityFromPosition(Position position) async {
   }
   return 'Ubicación desconocida';
 }
+*/

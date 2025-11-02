@@ -2,15 +2,28 @@ import 'package:alf_film/location_confirmation_screen.dart';
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:geolocator/geolocator.dart';
+// ignore: depend_on_referenced_packages
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'location_service.dart';
 import 'splash_screen.dart';
 import 'background_wrapper.dart';
 import 'manual_location_screen.dart';
 import 'movies_screen.dart';
+import 'credits.dart';
 
+bool hasVisitedHome = false;
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
+  runApp(const AlfFilmApp());
+}
+
+/*
 void main() {
   runApp(AlfFilmApp());
 }
+*/
 
 class AlfFilmApp extends StatelessWidget {
   const AlfFilmApp({super.key});
@@ -27,6 +40,7 @@ class AlfFilmApp extends StatelessWidget {
         '/confirm': (context) => LocationConfirmationScreen(),
         '/manual': (context) => ManualLocationScreen(), // pantalla manual
         '/movies': (context) => MoviesScreen(), // pantalla cartelera
+        '/credits': (context) => Credits(), // pantalla cartelera
       },
     );
   }
@@ -41,12 +55,14 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final LocationService _locationService = LocationService();
-  String _locationMessage = 'Detectando ubicación...';
+  String _locationMessage = '';
 
   @override
   void initState() {
     super.initState();
-    _initLocation();
+    if (!hasVisitedHome) {
+      _initLocation();
+    }
   }
 
   Future<void> _initLocation() async {
@@ -54,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (pos != null) {
       setState(() {
         _locationMessage =
-            'Ubicación detectada'; // 'Lat: ${pos.latitude}, Lon: ${pos.longitude}';
+            'Ubicación detectada...'; // 'Lat: ${pos.latitude}, Lon: ${pos.longitude}';
       });
 
       // Aquí podrías usar reverse geocoding para obtener ciudad/comuna
@@ -93,9 +109,58 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               SizedBox(height: 30),
-              Text(_locationMessage, style: TextStyle(color: Colors.white)),
+              hasVisitedHome
+                  ? FractionallySizedBox(
+                      widthFactor: 0.4, // 👈 40% del ancho disponible
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // 🔁 Repete la lógica inicial de la app
+                          _initLocation();
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.indigo,
+                          padding: const EdgeInsets.symmetric(vertical: 20),
+                        ),
+                        child: const Text(
+                          'Cartelera',
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ),
+                    )
+                  : Text(
+                      _locationMessage,
+                      style: const TextStyle(color: Colors.white),
+                    ),
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: Container(
+        color: const Color(0xFF16357A),
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text(
+              'Este producto usa la API de TMDB pero no está respaldado ni certificado por TMDB.',
+              style: TextStyle(color: Colors.white, fontSize: 14),
+              textAlign: TextAlign.center,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/credits');
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                foregroundColor: Colors.indigo,
+              ),
+              child: Text('  Créditos  ', style: TextStyle(fontSize: 16)),
+            ),
+
+            const SizedBox(height: 6),
+            Image.asset('assets/images/tmdb_logo.png', height: 16),
+          ],
         ),
       ),
     );
