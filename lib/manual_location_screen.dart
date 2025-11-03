@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'background_wrapper.dart';
+import 'package:geocoding/geocoding.dart';
 
 class ManualLocationScreen extends StatefulWidget {
   const ManualLocationScreen({super.key});
@@ -36,6 +37,7 @@ class _ManualLocationScreenState extends State<ManualLocationScreen> {
   final TextEditingController cityController = TextEditingController();
   final FocusNode cityFocusNode = FocusNode();
   bool countryDetected = false;
+  bool? cityValid;
 
   final Map<String, String> countryCodeMap = {
     'AR': 'Argentina',
@@ -76,7 +78,6 @@ class _ManualLocationScreenState extends State<ManualLocationScreen> {
     final localeCountryCode = Localizations.localeOf(context).countryCode;
     if (localeCountryCode != null) {
       final matchedCountry = countryCodeMap[localeCountryCode.toUpperCase()];
-      debugPrint('País detectado automáticamente: $matchedCountry');
 
       if (matchedCountry != null && countries.contains(matchedCountry)) {
         setState(() {
@@ -97,6 +98,29 @@ class _ManualLocationScreenState extends State<ManualLocationScreen> {
     cityController.dispose();
     cityFocusNode.dispose();
     super.dispose();
+  }
+
+  Future<bool> validateCityWithAPI(String city, String countryCode) async {
+    try {
+      final locations = await locationFromAddress('$city, $countryCode');
+
+      if (locations.isEmpty) return false;
+
+      final location = locations.first;
+      final placemarks = await placemarkFromCoordinates(
+        location.latitude,
+        location.longitude,
+      );
+
+      if (placemarks.isEmpty) return false;
+
+      final detectedCountryCode = placemarks.first.isoCountryCode
+          ?.toLowerCase();
+      return detectedCountryCode == countryCode.toLowerCase();
+    } catch (e) {
+      debugPrint('Error al validar ciudad: $e');
+      return false;
+    }
   }
 
   @override
@@ -160,30 +184,125 @@ class _ManualLocationScreenState extends State<ManualLocationScreen> {
               SizedBox(height: 20),
               TextField(
                 controller: cityController,
+                focusNode: cityFocusNode,
                 decoration: InputDecoration(
                   filled: true,
                   fillColor: Colors.white70,
                   labelText: 'Ingresa tu ciudad',
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
+                  suffixIcon: cityValid == null
+                      ? null
+                      : Icon(
+                          cityValid! ? Icons.check_circle : Icons.error,
+                          color: cityValid! ? Colors.green : Colors.red,
+                        ),
                 ),
+                onChanged: (value) async {
+                  final city = value.trim();
+                  if (city.isEmpty || selectedCountry == null) {
+                    setState(() => cityValid = null);
+                    return;
+                  }
+
+                  final countryCode = getCountryCode(selectedCountry!);
+                  final isValid = await validateCityWithAPI(city, countryCode);
+                  setState(() => cityValid = isValid);
+                },
               ),
               SizedBox(height: 30),
               ElevatedButton(
-                onPressed: () {
-                  if (selectedCountry != null &&
-                      cityController.text.isNotEmpty) {
-                    Navigator.pushNamed(
-                      context,
-                      '/movies',
-                      arguments: {
-                        'country': selectedCountry,
-                        'city': cityController.text.trim(),
-                      },
+                onPressed: () async {
+                  final city = cityController.text.trim();
+                  final country = selectedCountry;
+
+                  if (country != null && city.isNotEmpty) {
+                    final countryCode = getCountryCode(country);
+                    final isValid = await validateCityWithAPI(
+                      city,
+                      countryCode,
+                    );
+
+                    if (isValid) {
+                      Navigator.pushNamed(
+                        context,
+                        '/movies',
+                        arguments: {
+                          'country': country,
+                          'city': city,
+                          'countrycode': countryCode,
+                        },
+                      );
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Colors.red,
+                          content: const Row(
+                            children: [
+                              Icon(Icons.error_outline, color: Colors.white),
+                              SizedBox(width: 10),
+                              Expanded(
+                                child: Text(
+                                  'La ciudad ingresada no es del país seleccionado o el nombre es incorrecto.',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    }
+                  } else if (country == null && city.isEmpty) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        backgroundColor: Colors.lightGreen,
+                        content: const Row(
+                          children: [
+                            Icon(Icons.error_rounded, color: Colors.white),
+                            SizedBox(width: 10),
+                            Expanded(
+                              child: Text(
+                                'Por favor selecciona el país e ingresa la ciudad.',
+                                style: TextStyle(color: Colors.black),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  } else if (country == null) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        backgroundColor: Colors.lightGreen,
+                        content: const Row(
+                          children: [
+                            Icon(Icons.error_rounded, color: Colors.white),
+                            SizedBox(width: 10),
+                            Expanded(
+                              child: Text(
+                                'Por favor seleccione el país.',
+                                style: TextStyle(color: Colors.black),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     );
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        content: Text('Por favor completa todos los campos'),
+                        backgroundColor: Colors.lightGreen,
+                        content: const Row(
+                          children: [
+                            Icon(Icons.error_rounded, color: Colors.white),
+                            SizedBox(width: 10),
+                            Expanded(
+                              child: Text(
+                                'Por favor ingresa la ciudad.',
+                                style: TextStyle(color: Colors.black),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     );
                   }

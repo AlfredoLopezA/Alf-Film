@@ -21,13 +21,18 @@ class _CreditsState extends State<Credits> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(height: MediaQuery.of(context).size.height * 0.35),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.15),
               Text(
                 'Créditos',
-                style: TextStyle(fontSize: 24, color: Colors.white),
+                style: TextStyle(fontSize: 26, color: Colors.white),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 20),
+              Text(
+                'AlfFilm es una app gratuita que permite explorar las películas en cartelera según tu ubicación, filtrar por género y ver detalles completos, incluyendo sinopsis, director, protagonistas y trailers directamente dentro de la aplicación.\nVersión: 1.0.0\nDesarrollado por: Alfredo López\nPaís: Chile\nDisponible: Para Android e Iphone.',
+                style: TextStyle(fontSize: 18, color: Colors.white),
+                textAlign: TextAlign.justify,
+              ),
               SizedBox(height: 30),
             ],
           ),

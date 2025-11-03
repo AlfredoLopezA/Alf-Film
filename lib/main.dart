@@ -157,9 +157,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: Text('  Créditos  ', style: TextStyle(fontSize: 16)),
             ),
-
-            const SizedBox(height: 6),
-            Image.asset('assets/images/tmdb_logo.png', height: 16),
           ],
         ),
       ),

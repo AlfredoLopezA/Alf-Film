@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:alf_film/main.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'background_wrapper.dart';
+import 'movie_details_screen.dart';
 import '../services/tmdb_service.dart';
 
 final String? apiKey = dotenv.env['TMDB_API_KEY'];
 
 class MoviesScreen extends StatefulWidget {
   final String? country;
-  final String? countryCode;
+  final String? countrycode;
   final String? city;
 
-  const MoviesScreen({super.key, this.country, this.city, this.countryCode});
+  const MoviesScreen({super.key, this.country, this.city, this.countrycode});
 
   @override
   State<MoviesScreen> createState() => _MoviesScreenState();
@@ -33,9 +34,11 @@ class _MoviesScreenState extends State<MoviesScreen> {
 
   final TMDBService tmdbService = TMDBService();
   List<dynamic> movies = [];
+  List<dynamic> allMovies = [];
+  List<dynamic> filteredMovies = [];
   bool isLoading = true;
   String? country;
-  String? countryCode;
+  String? countrycode;
   String? city;
 
   @override
@@ -48,8 +51,8 @@ class _MoviesScreenState extends State<MoviesScreen> {
 
     city = args?['city'] ?? widget.city ?? 'Ciudad desconocida';
     country = args?['country'] ?? widget.country ?? 'País desconocido';
-    countryCode =
-        args?['countrycode'] ?? widget.countryCode ?? 'Código desconocido';
+    countrycode =
+        args?['countrycode'] ?? widget.countrycode ?? 'Código desconocido';
 
     // debugPrint('Código: $city, País: $country y código: $countrycode');
     fetchMovies();
@@ -59,10 +62,18 @@ class _MoviesScreenState extends State<MoviesScreen> {
     try {
       setState(() => isLoading = true);
 
-      final data = await tmdbService.getNowPlayingMovies(countryCode!);
+      final data = await tmdbService.getNowPlayingMovies(countrycode!);
+      setState(() {
+        movies = data;
+        allMovies = data;
+        filteredMovies = List.from(allMovies);
+      });
+      /*
+      final data = await tmdbService.getNowPlayingMovies(countrycode!);
       setState(() {
         movies = data;
       });
+      */
     } catch (e) {
       debugPrint('Error al obtener cartelera: $e');
     } finally {
@@ -87,7 +98,6 @@ class _MoviesScreenState extends State<MoviesScreen> {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
-
               // ===== FILTRO POR GÉNERO =====
               Row(
                 children: [
@@ -112,7 +122,16 @@ class _MoviesScreenState extends State<MoviesScreen> {
                           onChanged: (value) {
                             setState(() {
                               selectedGenre = value!;
-                              // Futuro: aplicar filtro local
+                              if (selectedGenre == 'Todos') {
+                                filteredMovies = List.from(allMovies);
+                              } else {
+                                filteredMovies = allMovies.where((movie) {
+                                  final genres =
+                                      movie['genres'] as List<dynamic>?;
+                                  if (genres == null) return false;
+                                  return genres.contains(selectedGenre);
+                                }).toList();
+                              }
                             });
                           },
                           decoration: const InputDecoration(
@@ -127,7 +146,6 @@ class _MoviesScreenState extends State<MoviesScreen> {
                     ),
                   ),
                   const SizedBox(width: 10),
-
                   // ===== BOTÓN HOME =====
                   Expanded(
                     flex: 2,
@@ -153,7 +171,6 @@ class _MoviesScreenState extends State<MoviesScreen> {
                 ],
               ),
               const SizedBox(height: 2),
-
               // ===== LISTA DE PELÍCULAS =====
               Expanded(
                 child: Center(
@@ -166,11 +183,16 @@ class _MoviesScreenState extends State<MoviesScreen> {
                           textAlign: TextAlign.center,
                         )
                       : ListView.builder(
-                          itemCount: movies.length,
+                          itemCount: filteredMovies.length,
                           itemBuilder: (context, index) {
-                            final movie = movies[index];
+                            final movie = filteredMovies[index];
+                            final genres =
+                                (movie['genres'] as List<dynamic>?)?.join(
+                                  ', ',
+                                ) ??
+                                'N/D';
                             return Card(
-                              color: Color.fromRGBO(255, 255, 255, 0.9),
+                              color: const Color.fromRGBO(255, 255, 255, 0.9),
                               margin: const EdgeInsets.symmetric(vertical: 6),
                               child: ListTile(
                                 leading: movie['poster_path'] != null
@@ -181,9 +203,52 @@ class _MoviesScreenState extends State<MoviesScreen> {
                                       )
                                     : const Icon(Icons.movie),
                                 title: Text(movie['title'] ?? 'Sin título'),
-                                subtitle: Text(
-                                  'Fecha de estreno: ${movie['release_date'] ?? 'N/D'}',
+                                subtitle: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Fecha: ${movie['release_date'] ?? 'N/D'}',
+                                    ),
+                                    if (genres.isNotEmpty)
+                                      Text('Género: $genres'),
+                                  ],
                                 ),
+                                // 👇 Acción al tocar una película
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                    PageRouteBuilder(
+                                      transitionDuration: const Duration(
+                                        milliseconds: 400,
+                                      ),
+                                      pageBuilder:
+                                          (
+                                            context,
+                                            animation,
+                                            secondaryAnimation,
+                                          ) => MovieDetailsScreen(
+                                            movieId: movie['id'],
+                                            countryCode: countrycode!,
+                                          ),
+                                      transitionsBuilder:
+                                          (
+                                            context,
+                                            animation,
+                                            secondaryAnimation,
+                                            child,
+                                          ) {
+                                            final offsetAnimation =
+                                                Tween<Offset>(
+                                                  begin: const Offset(1.0, 0.0),
+                                                  end: Offset.zero,
+                                                ).animate(animation);
+                                            return SlideTransition(
+                                              position: offsetAnimation,
+                                              child: child,
+                                            );
+                                          },
+                                    ),
+                                  );
+                                },
                               ),
                             );
                           },
