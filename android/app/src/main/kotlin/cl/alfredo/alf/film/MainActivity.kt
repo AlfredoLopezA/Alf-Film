@@ -1,4 +1,4 @@
-package com.example.alf_film
+package cl.alfredo.alf.film
 
 import io.flutter.embedding.android.FlutterActivity
 

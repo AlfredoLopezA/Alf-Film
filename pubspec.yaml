@@ -13,35 +13,32 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   flutter_dotenv: ^5.0.2
+  geolocator: ^10.1.0
+  geocoding: ^2.0.5
+  flutter_svg: ^2.0.10+1
+  http: ^1.2.2
+  youtube_player_flutter: ^9.0.1
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  geolocator: ^10.1.0
-  geocoding: ^2.0.5
-  flutter_svg: ^2.0.10+1
   flutter_lints: ^5.0.0
-  http: ^1.2.2
-  youtube_player_flutter: ^9.0.1
-  flutter_launcher_icons: ^0.13.1
 
 flutter:
 
   uses-material-design: true
 
   assets:
-    - assets/images/logo.png
-    - assets/images/basescreen.png
-    - assets/images/mainscreen.png
-    - assets/images/tmdb_logo.png
+    - assets/images/
+    - assets/icons/
+    - assets/flags/
     - .env
-
 
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path_android: "assets/icon/android/mipmap-xxxhdpi/ic_launcher.png"
-  image_path_ios: "assets/icon/ios/Icon-App-1024x1024@1x.png"
+  image_path: "assets/icon/app_icon.png"
 
   #   - images/a_dot_ham.jpeg
 

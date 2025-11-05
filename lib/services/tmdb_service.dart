@@ -1,4 +1,5 @@
 import 'dart:convert';
+// ignore: depend_on_referenced_packages
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -107,14 +108,12 @@ class TMDBService {
             .toList()
             .join(', ');
 
-        final trailer =
-            (videos['results'] as List<dynamic>?)
-                ?.cast<Map<String, dynamic>>()
-                .firstWhere(
-                  (v) => v['type'] == 'Trailer' && v['site'] == 'YouTube',
-                  orElse: () => {'key': null},
-                )['key'] ??
-            null;
+        final trailer = (videos['results'] as List<dynamic>?)
+            ?.cast<Map<String, dynamic>>()
+            .firstWhere(
+              (v) => v['type'] == 'Trailer' && v['site'] == 'YouTube',
+              orElse: () => {'key': null},
+            )['key'];
 
         return {
           'id': movieId,
