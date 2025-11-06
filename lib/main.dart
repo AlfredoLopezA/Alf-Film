@@ -55,6 +55,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final LocationService _locationService = LocationService();
+  bool showDetectLocationButton = false;
   String _locationMessage = '';
 
   @override
@@ -76,11 +77,53 @@ class _HomeScreenState extends State<HomeScreen> {
       // Aquí podrías usar reverse geocoding para obtener ciudad/comuna
       Navigator.pushNamed(context, '/confirm', arguments: pos);
     } else {
+      /*
       setState(() {
         _locationMessage = 'No se pudo obtener la ubicación.';
       });
       // Aquí podrías redirigir a selección manual de país/ciudad
       Navigator.pushNamed(context, '/manual', arguments: pos);
+      */
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            backgroundColor: const Color(0xFFE3F2FD), // celeste suave
+            title: const Text(
+              'Ubicación requerida',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.indigo,
+              ),
+            ),
+            content: const Text(
+              'La aplicación requiere que active su ubicación.\n¿Desea activarla ahora?',
+              style: TextStyle(fontSize: 16, color: Colors.black87),
+            ),
+            actions: [
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.white),
+                onPressed: () async {
+                  Navigator.pop(context);
+                  await Geolocator.openLocationSettings();
+                  setState(() {
+                    showDetectLocationButton = true;
+                  });
+                },
+                child: const Text('Sí', style: TextStyle(color: Colors.indigo)),
+              ),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.white),
+                onPressed: () {
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, '/manual');
+                },
+                child: const Text('No', style: TextStyle(color: Colors.indigo)),
+              ),
+            ],
+          );
+        },
+      );
     }
   }
 
@@ -109,29 +152,43 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               SizedBox(height: 30),
-              hasVisitedHome
-                  ? FractionallySizedBox(
-                      widthFactor: 0.4, // 👈 40% del ancho disponible
-                      child: ElevatedButton(
-                        onPressed: () {
-                          // 🔁 Repete la lógica inicial de la app
-                          _initLocation();
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          foregroundColor: Colors.indigo,
-                          padding: const EdgeInsets.symmetric(vertical: 20),
+              if (showDetectLocationButton)
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                  ),
+                  onPressed: () async {
+                    await _initLocation();
+                  },
+                  child: const Text(
+                    'Detectar ubicación',
+                    style: TextStyle(color: Colors.indigo, fontSize: 16),
+                  ),
+                )
+              else
+                hasVisitedHome
+                    ? FractionallySizedBox(
+                        widthFactor: 0.4, // 👈 40% del ancho disponible
+                        child: ElevatedButton(
+                          onPressed: () {
+                            // 🔁 Repite la lógica inicial de la app
+                            _initLocation();
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            foregroundColor: Colors.indigo,
+                            padding: const EdgeInsets.symmetric(vertical: 20),
+                          ),
+                          child: const Text(
+                            'Cartelera',
+                            style: TextStyle(fontSize: 16),
+                          ),
                         ),
-                        child: const Text(
-                          'Cartelera',
-                          style: TextStyle(fontSize: 16),
-                        ),
+                      )
+                    : Text(
+                        _locationMessage,
+                        style: const TextStyle(color: Colors.white),
                       ),
-                    )
-                  : Text(
-                      _locationMessage,
-                      style: const TextStyle(color: Colors.white),
-                    ),
             ],
           ),
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'background_wrapper.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:alf_film/main.dart';
 
 class ManualLocationScreen extends StatefulWidget {
   const ManualLocationScreen({super.key});
@@ -311,6 +312,26 @@ class _ManualLocationScreenState extends State<ManualLocationScreen> {
               ),
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: Container(
+        color: const Color(0xFF16357A),
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: IconButton(
+                icon: const Icon(Icons.home, color: Colors.white, size: 48),
+                onPressed: () {
+                  hasVisitedHome = true;
+                  Navigator.pushNamed(context, '/home');
+                },
+                tooltip: 'Ir al inicio',
+              ),
+            ),
+          ],
         ),
       ),
     );

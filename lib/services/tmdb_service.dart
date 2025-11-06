@@ -2,6 +2,7 @@ import 'dart:convert';
 // ignore: depend_on_referenced_packages
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter/widgets.dart';
 
 final String? apiKey = dotenv.env['TMDB_API_KEY'];
 
@@ -10,7 +11,7 @@ class TMDBService {
   Future<List<dynamic>> getNowPlayingMovies(String countrycode) async {
     // 1) Obtener lista de géneros y construir map id->name
     final genresUrl = Uri.parse(
-      'https://api.themoviedb.org/3/genre/movie/list?api_key=$apiKey&language=es-ES',
+      'https://api.themoviedb.org/3/genre/movie/list?api_key=$apiKey&language=es-MX',
     );
     final genresResp = await http.get(genresUrl);
     Map<int, String> genreMap = {};
@@ -24,7 +25,7 @@ class TMDBService {
 
     // 2) Obtener now_playing
     final url = Uri.parse(
-      'https://api.themoviedb.org/3/movie/now_playing?api_key=$apiKey&language=es-ES&region=$countrycode&page=1',
+      'https://api.themoviedb.org/3/movie/now_playing?api_key=$apiKey&language=es-MX&region=$countrycode&page=1',
     );
     final response = await http.get(url);
 
@@ -53,26 +54,16 @@ class TMDBService {
     }
   }
 
-  /*
-  Future<List<dynamic>> getNowPlayingMovies(String countrycode) async {
-    final url = Uri.parse(
-      'https://api.themoviedb.org/3/movie/now_playing?api_key=$apiKey&language=es-ES&region=$countrycode&page=1',
-    );
-
-    final response = await http.get(url);
-
-    if (response.statusCode == 200) {
-      final data = jsonDecode(response.body);
-      return data['results'];
-    } else {
-      throw Exception('Error al obtener cartelera: ${response.statusCode}');
-    }
-  }
-*/
-
   // === 2. Detalles completos de una película ===
   Future<Map<String, dynamic>> getMovieFullDetails(int movieId) async {
-    final language = 'es-CL';
+    //final language = 'es-MX';
+
+    String language =
+        '${WidgetsBinding.instance.platformDispatcher.locale.languageCode}-${WidgetsBinding.instance.platformDispatcher.locale.countryCode!}';
+
+    if (language != 'es-MX' && language != 'pt-BR') {
+      language = 'es-MX';
+    }
 
     final detailsUrl =
         'https://api.themoviedb.org/3/movie/$movieId?api_key=$apiKey&language=$language';
@@ -136,7 +127,7 @@ class TMDBService {
 
   Future<String?> getMovieTrailer(int movieId) async {
     final url =
-        'https://api.themoviedb.org/3/movie/$movieId/videos?api_key=$apiKey&language=es-ES';
+        'https://api.themoviedb.org/3/movie/$movieId/videos?api_key=$apiKey&language=es-MX';
 
     final response = await http.get(Uri.parse(url));
 
