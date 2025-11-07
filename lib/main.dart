@@ -73,17 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
         _locationMessage =
             'Ubicación detectada...'; // 'Lat: ${pos.latitude}, Lon: ${pos.longitude}';
       });
-
-      // Aquí podrías usar reverse geocoding para obtener ciudad/comuna
+      if (!mounted) return;
       Navigator.pushNamed(context, '/confirm', arguments: pos);
     } else {
-      /*
-      setState(() {
-        _locationMessage = 'No se pudo obtener la ubicación.';
-      });
-      // Aquí podrías redirigir a selección manual de país/ciudad
-      Navigator.pushNamed(context, '/manual', arguments: pos);
-      */
+      if (!mounted) return;
       showDialog(
         context: context,
         builder: (BuildContext context) {

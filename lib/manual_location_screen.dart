@@ -88,6 +88,7 @@ class _ManualLocationScreenState extends State<ManualLocationScreen> {
 
         // Da foco al campo ciudad después de un breve delay
         Future.delayed(const Duration(milliseconds: 300), () {
+          if (!mounted) return;
           FocusScope.of(context).requestFocus(cityFocusNode);
         });
       }

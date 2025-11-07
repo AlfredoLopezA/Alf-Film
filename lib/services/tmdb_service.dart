@@ -3,8 +3,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter/widgets.dart';
+import 'package:logger/logger.dart';
 
 final String? apiKey = dotenv.env['TMDB_API_KEY'];
+final logger = Logger();
 
 class TMDBService {
   // === 1. Películas en cartelera ===
@@ -119,7 +121,7 @@ class TMDBService {
         };
       }
     } catch (e) {
-      print('Error obteniendo detalles de película: $e');
+      logger.e('Error obteniendo detalles de película: $e');
     }
 
     return {};
